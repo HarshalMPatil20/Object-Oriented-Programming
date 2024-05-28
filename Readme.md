@@ -1,3 +1,6 @@
+
+<img src="src/oop.jpg" alt="Image Alt Text" width="200" height="200">
+
 # Object-Oriented Programming 
 
 Welcome to the Object-Oriented Programming (OOP) Repository! This repository is dedicated to providing resources, examples, and exercises to help you learn and master object-oriented programming concepts.
