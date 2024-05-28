@@ -1,5 +1,5 @@
 
-<img src="src/oop.jpg" alt="Image Alt Text" width="200" height="200">
+<img src="src/oop1.jpg" alt="Image Alt Text" width="200" height="200">
 
 # Object-Oriented Programming 
 
