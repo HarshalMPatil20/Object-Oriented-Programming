@@ -23,7 +23,7 @@ By using OOP, developers can create modular and reusable code, improve code orga
 
 ## 1. ```Abstraction```
 
-> Abstraction means hiding internal details and showing the required things
+- Abstraction means hiding internal details and showing the required things
 
 Abstraction is the process of simplifying complex systems by breaking them down into smaller, more manageable parts. It allows us to focus on the essential features of an object or system while hiding unnecessary details.
 
@@ -31,7 +31,7 @@ Example: Imagine a car. As a driver, <span style="color:yellow">you don't need t
 
 ## 2. ```Encapsulation```
 
-> Encapsulation is the process of grouping data in a single section.
+- Encapsulation is the process of grouping data in a single section.
 
 Encapsulation is the practice of bundling data and methods that operate on that data into a single unit called an object. It provides data hiding and protects the internal state of an object from external interference.
 
@@ -39,8 +39,8 @@ Example: Complete television is single box where all the mechanism are hidden in
 
 ## 3. ```Inheritance```
 
-> - Inheritance means designing an object or a class by re-using the properties of the existing class and object.
-> - Inheritance is same as <span style="color:yellow">specialization.</span>
+  - Inheritance means designing an object or a class by re-using the properties of the existing class and object.
+- Inheritance is same as <span style="color:yellow">specialization.</span>
 
 Inheritance is a mechanism that allows a class to inherit properties and behaviors from another class. It promotes code reuse and enables the creation of hierarchical relationships between classes.
 
@@ -48,10 +48,9 @@ Example: A old style television (idiot box) is transformed with extra features i
 
 ## 4. ```Polymorphism```
 
-> - Polymorphism is a concept in which we can execute a single
+ - Polymorphism is a concept in which we can execute a single
 operation in different ways.
-
-> - Polymorphism is same as <span style="color:yellow">generalization.</span>
+ - Polymorphism is same as <span style="color:yellow">generalization.</span>
 
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects, providing flexibility and extensibility.
 
