@@ -19,7 +19,7 @@ By using OOP, developers can create modular and reusable code, improve code orga
 - <span style="color:yellow">Inheritance</span>
 - <span style="color:yellow">Polymorphism</span>
 
-<img src="../src/pillers.jpg" alt="Image Alt Text" width="350" >
+<img src="../src/piller.jpg" alt="Image Alt Text" width="350" >
 
 ## 1. Abstraction
 
