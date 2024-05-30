@@ -99,3 +99,175 @@ method area which contains all the methods.
 - The definitions of the will be present inside the heap, as the objects will be based on the definitions so the objects are also present in heap.
 
 <img src="../src/Objectform.png" alt="Image Alt Text" width="350" >
+
+## How to Write Classes
+
+## 1. Circle
+
+- Radius
+
+<img src="../src/circle.png" alt="Image Alt Text" width="150" >
+
+```
+class Circle 
+    {
+        public double radius;
+    
+        public double area() {
+            return Math.PI*radius*radius;
+        }
+
+        public double perimeter() {
+            return 2*Math.PI*radius;
+        }
+
+        public double circumference() {
+            return perimeter();
+        } 
+    }
+```
+
+## 2. Rectangle
+
+- Length
+- Breadth
+
+<img src="../src/rectangle.png" alt="Image Alt Text" width="250" >
+
+```
+class Rectangle 
+    { 
+        public int length; 
+        public int breadth; 
+ 
+        public int area() { 
+            return length*breadth; 
+        } 
+
+        public int perimeter () { 
+            return 2*(length+breadth); 
+        } 
+    }
+```
+
+## 3. Cylinder
+
+- Length
+- Breadth
+
+<img src="../src/cylinder.png" alt="Image Alt Text" width="200" >
+
+```
+class Cylinder 
+    { 
+        public double radius; 
+        public double height; 
+ 
+        public double lid_area() { 
+            return 2*Math.PI*radius*radius; 
+        } 
+
+        public double Surface_area() { 
+            return 2*Math.PI*radius*height; 
+        } 
+
+        public double Volume() { 
+            return Math.PI*radius*radius*height; 
+        } 
+    }
+```
+
+## 4. Account
+
+- Account Number
+- Name
+- Balance
+
+```
+class Account
+    { 
+        public long account_number; 
+        public string name; 
+        public double balance;
+ 
+        public void Deposit (double amount) { 
+            balance += amount; 
+        }
+
+        public void Withdraw (double amount) { 
+            balance -= amount; 
+        }  
+    }
+```
+
+# ``Important`` : `tostring()`
+
+## 1. Using the `Overriden` toString() Method
+
+- The `toString()` method in Java is used to return a string representation of an object.
+- It's often `overridden` in classes to provide a more meaningful or customized string representation of the object's state.
+- Here's how you can use and override the toString() method in a Java class :
+
+```
+public class Car {
+    String make;
+    String model;
+    int year;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    @Override
+    //we can override toString() method to get a string representation of our choice, Modify tostring method as you want.
+
+    public String toString() {
+        return year + " " + make + " " + model;
+    }
+
+    public static void main(String[] args) {
+
+        Car myCar = new Car("Toyota", "Camry", 2022);
+
+        //when we print an object, toString() method is called implicitly
+        
+        System.out.println(myCar);  // Output: 2022 Toyota Camry
+
+        System.out.println(myCar.toString()); // Output: 2022 Toyota Camry
+
+        
+
+    }
+}
+```
+
+[For Demo Try it Here](example2.java)
+
+## 2. Using the Default toString() Method
+
+- If you don't override the toString() method in your class, Java will use the `default implementation` from the Object class. 
+- This default implementation returns a string that consists of `the class name, @ symbol, and the object's hash code`
+
+```
+public class Car {
+    String make;
+    String model;
+    int year;
+
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    public static void main(String[] args) {
+
+        Car myCar = new Car("Toyota", "Camry", 2022);
+
+        System.out.println(myCar);  // Output: Car@1f6e597d
+        System.out.println(myCar.toString());  // Output: Car@1f6e597d
+    }
+}
+```
