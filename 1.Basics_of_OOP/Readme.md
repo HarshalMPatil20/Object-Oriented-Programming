@@ -39,17 +39,17 @@ Example: Complete television is single box where all the mechanism are hidden in
 
 ## 3. Inheritance
 
-  - ```Inheritance means designing an object or a class by re-using the properties of the existing class and object.```
+- ```Inheritance means designing an object or a class by re-using the properties of the existing class and object.```
 - ```Inheritance is same as specialization.```
 
 Inheritance is a mechanism that allows a class to inherit properties and behaviors from another class. It promotes code reuse and enables the creation of hierarchical relationships between classes.
 
 Example: A old style television (idiot box) is transformed with extra features into slim and smart television where it re-used the properties of old television
 
-## 4. Polymorphism```
+## 4. Polymorphism
 
- - ``` Polymorphism is a concept in which we can execute a single operation in different ways. ```
- - ```Polymorphism is same as generalization.```
+- ``` Polymorphism is a concept in which we can execute a single operation in different ways. ```
+- ```Polymorphism is same as generalization.```
 
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects, providing flexibility and extensibility.
 
@@ -58,3 +58,18 @@ Example: Consider a Shape superclass with a method called calculateArea(). We ca
 ## Class Vs Object
 
 <img src="../src/classvsobject.webp" alt="Image Alt Text" width="750" >
+
+- Object is defined in terms of its `properties` and `behavior`
+- Operation of behaviors will affect the properties.
+- Anything in the world can be defined in the terms of properties and behavior.
+
+- For a `single class we can have many objects.`
+
+- Multiple number of objects can be created by one single class  
+
+For example :
+A house or a car or a television is an object but the design or blueprint of the 
+object is a class.
+
+
+<img src="../src/Objectform.png" alt="Image Alt Text" width="400" >
