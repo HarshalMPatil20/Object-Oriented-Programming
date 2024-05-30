@@ -1,6 +1,6 @@
 # Basics of Object-Oriented Programming (OOP)
 
-## Introduction to Object-Oriented Programming (OOP)
+## 1. Introduction to Object-Oriented Programming (OOP)
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which are instances of classes. It focuses on the concepts of abstraction, encapsulation, inheritance, and polymorphism.
 
@@ -21,7 +21,7 @@ By using OOP, developers can create modular and reusable code, improve code orga
 
 <img src="../src/piller.jpg" alt="Image Alt Text" width="350" >
 
-## 1. Abstraction
+## A. Abstraction
 
 - ```Abstraction means hiding internal details and showing the required things```
 
@@ -29,7 +29,7 @@ Abstraction is the process of simplifying complex systems by breaking them down 
 
 Example: Imagine a car. As a driver, <span style="color:yellow">you don't need to know</span> how the engine works internally. You only need to know how to start the car, accelerate brake, and change gears.
 
-## 2. Encapsulation
+## B. Encapsulation
 
 - ```Encapsulation is the process of grouping data in a single section.```
 
@@ -37,7 +37,7 @@ Encapsulation is the practice of bundling data and methods that operate on that 
 
 Example: Complete television is single box where all the mechanism are hidden inside the box all are capsuled
 
-## 3. Inheritance
+## C. Inheritance
 
 - ```Inheritance means designing an object or a class by re-using the properties of the existing class and object.```
 - ```Inheritance is same as specialization.```
@@ -46,7 +46,7 @@ Inheritance is a mechanism that allows a class to inherit properties and behavio
 
 Example: A old style television (idiot box) is transformed with extra features into slim and smart television where it re-used the properties of old television
 
-## 4. Polymorphism
+## D. Polymorphism
 
 - ``` Polymorphism is a concept in which we can execute a single operation in different ways. ```
 - ```Polymorphism is same as generalization.```
@@ -55,7 +55,7 @@ Polymorphism allows objects of different classes to be treated as objects of a c
 
 Example: Consider a Shape superclass with a method called calculateArea(). We can have different subclasses like Circle and Rectangle that override the calculateArea() method to provide their own implementation.
 
-## Class Vs Object
+## 2. Class Vs Object
 
 <img src="../src/classvsobject.webp" alt="Image Alt Text" width="750" >
 
@@ -100,9 +100,9 @@ method area which contains all the methods.
 
 <img src="../src/Objectform.png" alt="Image Alt Text" width="350" >
 
-## How to Write Classes
+## 3. How to Write Classes
 
-## 1. Circle
+## A. Circle
 
 - Radius
 
@@ -127,7 +127,7 @@ class Circle
     }
 ```
 
-## 2. Rectangle
+## B. Rectangle
 
 - Length
 - Breadth
@@ -150,7 +150,7 @@ class Rectangle
     }
 ```
 
-## 3. Cylinder
+## C. Cylinder
 
 - Length
 - Breadth
@@ -177,7 +177,7 @@ class Cylinder
     }
 ```
 
-## 4. Account
+## D. Account
 
 - Account Number
 - Name
@@ -202,10 +202,12 @@ class Account
 
 # ``Important`` : `tostring()`
 
-## 1. Using the `Overriden` toString() Method
+## A. Using the `Overriden` toString() Method
 
 - The `toString()` method in Java is used to return a string representation of an object.
+
 - It's often `overridden` in classes to provide a more meaningful or customized string representation of the object's state.
+
 - Here's how you can use and override the toString() method in a Java class :
 
 ```
@@ -248,9 +250,10 @@ class overriden_tostring {
 
 [For Demo Try it Here](example2.java)
 
-## 2. Using the Default toString() Method
+## B. Using the Default toString() Method
 
 - If you don't override the toString() method in your class, Java will use the `default implementation` from the Object class. 
+
 - This default implementation returns a string that consists of `the class name, @ symbol, and the object's hash code`
 
 ```
@@ -267,7 +270,7 @@ public class Car {
 }
 
 public class default_tostring { 
-    
+
     public static void main(String[] args) {
 
         Car myCar = new Car("Toyota", "Camry", 2022);
@@ -277,3 +280,50 @@ public class default_tostring {
     }
 }
 ```
+## 4. Data Hiding
+
+- Data hiding is a concept in object-oriented programming (OOP) that refers to the practice of `hiding the internal state (data)` of an object and requiring all interactions with the object to be performed `through its public interface.` 
+
+- This is achieved by using access modifiers like `private`, `protected`, and `public` in languages such as Java, C++, and C#.
+
+In languages like Java, you can achieve data hiding using `access modifiers`:
+- `Public`: Allows unrestricted access from any other class or package.
+
+- `Protected`: Allows access to members within the same class, subclasses, and classes in the same package.
+
+- `Private`: Limits access to members (variables or methods) only within the same class.
+
+### Example  : [For Demo Try it Here](example3.java)
+```
+class Rectangle
+{
+    private double length;
+    private double breadth;
+    
+    // 'get' Methods
+
+    public double getLength() {
+        return length;
+    }
+    
+    public double getBreadth() {
+        return breadth;
+    }
+    
+
+    // 'set' Methods
+
+    public void setLength(double l) {
+        if(l>=0)
+            length=l;
+    }
+    
+    public void setBreadth(double b) {
+        if(b>=0)
+            breadth=b;
+    }
+}
+```
+
+<img src="../src/datahiding.png" alt="Image Alt Text" width="350" >
+
