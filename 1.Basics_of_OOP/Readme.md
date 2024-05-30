@@ -227,6 +227,10 @@ public class Car {
         return year + " " + make + " " + model;
     }
 
+}
+
+class overriden_tostring {
+
     public static void main(String[] args) {
 
         Car myCar = new Car("Toyota", "Camry", 2022);
@@ -236,11 +240,10 @@ public class Car {
         System.out.println(myCar);  // Output: 2022 Toyota Camry
 
         System.out.println(myCar.toString()); // Output: 2022 Toyota Camry
-
         
-
     }
 }
+
 ```
 
 [For Demo Try it Here](example2.java)
@@ -261,7 +264,10 @@ public class Car {
         this.model = model;
         this.year = year;
     }
+}
 
+public class default_tostring { 
+    
     public static void main(String[] args) {
 
         Car myCar = new Car("Toyota", "Camry", 2022);
