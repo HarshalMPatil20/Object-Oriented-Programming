@@ -68,8 +68,34 @@ Example: Consider a Shape superclass with a method called calculateArea(). We ca
 - Multiple number of objects can be created by one single class  
 
 For example :
-A house or a car or a television is an object but the design or blueprint of the 
+A house or a car or a television is an object but the design or blueprint of the
 object is a class.
 
+### Example Program
 
-<img src="../src/Objectform.png" alt="Image Alt Text" width="400" >
+```
+class Television { 
+
+    private int channel; 
+    private int volume; 
+ 
+    public void changechannel() 
+    public void changevolume() 
+} 
+
+class test 
+{ 
+    public static void main() { 
+
+        Television t=new Television(); 
+        t.changechannel(10); 
+    } 
+}
+```
+
+- In java there is an area inside main memory which is known as
+method area which contains all the methods.
+
+- The definitions of the will be present inside the heap, as the objects will be based on the definitions so the objects are also present in heap.
+
+<img src="../src/Objectform.png" alt="Image Alt Text" width="350" >
