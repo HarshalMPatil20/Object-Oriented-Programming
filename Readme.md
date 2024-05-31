@@ -1,13 +1,11 @@
-&nbsp; 
 
-<img src="src/java.png" alt="image" width="60" height="60" >&nbsp; 
-<img src="src/cpp.png" alt="image" width="60" height="60" >&nbsp; 
-<img src="src/python.png" alt="image" width="60" height="60" >&nbsp; 
-<img src="src/csharp.png" alt="image" width="60" height="60" >&nbsp; 
-<img src="src/javascript.png" alt="image" width="60" height="60" >&nbsp; 
 
-&nbsp; 
-&nbsp; 
+<img src="src/java.png" alt="image" width="50" height="50" >&nbsp; 
+<img src="src/cpp.png" alt="image" width="50" height="50" >&nbsp; 
+<img src="src/python.png" alt="image" width="50" height="50" >&nbsp; 
+<img src="src/csharp.png" alt="image" width="50" height="50" >&nbsp; 
+<img src="src/javascript.png" alt="image" width="50" height="50" >&nbsp; 
+ 
 
 # The Object Oriented Programming 
 
