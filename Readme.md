@@ -1,7 +1,17 @@
+&nbsp; 
 
-<img src="src/oop1.jpg" alt="Image Alt Text" width="200" height="200">
+<img src="src/java.png" alt="image" width="60" height="60" >&nbsp; 
+<img src="src/cpp.png" alt="image" width="60" height="60" >&nbsp; 
+<img src="src/python.png" alt="image" width="60" height="60" >&nbsp; 
+<img src="src/csharp.png" alt="image" width="60" height="60" >&nbsp; 
+<img src="src/javascript.png" alt="image" width="60" height="60" >&nbsp; 
 
-# Object-Oriented Programming 
+&nbsp; 
+&nbsp; 
+
+# The Object Oriented Programming 
+
+<img src="src/oop1.png" alt="Image Alt Text" width="300" height="300">
 
 Welcome to the Object-Oriented Programming (OOP) Repository! This repository is dedicated to providing resources, examples, and exercises to help you learn and master object-oriented programming concepts.
 
