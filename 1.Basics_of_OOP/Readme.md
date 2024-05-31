@@ -358,6 +358,7 @@ class Rectangle
 
 &nbsp;
 
+
 <img src="../src/datahiding.png" alt="Image Alt Text" width="350" >
 
 &nbsp;
