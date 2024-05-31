@@ -359,7 +359,7 @@ class Rectangle
 &nbsp;
 
 
-<img src="../src/datahiding.png" alt="Image Alt Text" width="350" >
+<img src="../src/Datahiding.png" alt="Image Alt Text" width="350" >
 
 &nbsp;
 
