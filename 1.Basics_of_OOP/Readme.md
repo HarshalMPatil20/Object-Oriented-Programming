@@ -1,5 +1,4 @@
 
-
 # Basics of Object-Oriented Programming (OOP)
 
 ## 1. Introduction to Object-Oriented Programming (OOP)
@@ -202,9 +201,11 @@ class Account
     }
 ```
 
-# ``Important`` : `tostring()`
+&nbsp;
 
-## A. Using the `Overriden` toString() Method
+## ``Important`` : `tostring()`
+
+### A. Using the `Overriden` toString() Method
 
 - The `toString()` method in Java is used to return a string representation of an object.
 
@@ -252,9 +253,11 @@ class overriden_tostring {
 
 [For Demo Try it Here](example2.java)
 
-## B. Using the Default toString() Method
+&nbsp;
 
-- If you don't override the toString() method in your class, Java will use the `default implementation` from the Object class. 
+### B. Using the Default toString() Method
+
+- If you don't override the toString() method in your class, Java will use the `default implementation` from the Object class.
 
 - This default implementation returns a string that consists of `the class name, @ symbol, and the object's hash code`
 
@@ -282,13 +285,15 @@ public class default_tostring {
     }
 }
 ```
+
 ## 4. Data Hiding
 
-- Data hiding is a concept in object-oriented programming (OOP) that refers to the practice of `hiding the internal state (data)` of an object and requiring all interactions with the object to be performed `through its public interface.` 
+- Data hiding is a concept in object-oriented programming (OOP) that refers to the practice of `hiding the internal state (data)` of an object and requiring all interactions with the object to be performed `through its public interface.`
 
 - This is achieved by using access modifiers like `private`, `protected`, and `public` in languages such as Java, C++, and C#.
 
 In languages like Java, you can achieve data hiding using `access modifiers`:
+
 - `Public`: Allows unrestricted access from any other class or package.
 
 - `Protected`: Allows access to members within the same class, subclasses, and classes in the same package.
@@ -296,6 +301,7 @@ In languages like Java, you can achieve data hiding using `access modifiers`:
 - `Private`: Limits access to members (variables or methods) only within the same class.
 
 ### Example  : [For Demo Try it Here](example3.java)
+
 ```
 class Rectangle
 {
@@ -329,3 +335,116 @@ class Rectangle
 
 <img src="../src/datahiding.png" alt="Image Alt Text" width="350" >
 
+## 5. Types of Properties
+
+Properties are typically represented as instance variables (fields) within a class, and their readability and writability `are controlled using access modifiers (private, protected, public) along with getter and setter methods.`
+
+- ### Read & Write Properties : (`get` & `set`)
+
+    The most common type of properties in Java allows both reading and writing of the property's value. This is achieved by providing `both getter and setter methods` with appropriate access modifiers.
+
+    ```
+        Example: 
+        Let's take a BankAccount class representing a bank account with a balance that can be both read and modified
+    ```
+
+    &nbsp;
+
+- ### Read-only Properties : (`get`)
+
+    Read-only properties are achieved by declaring a private field and providing `only a public getter method without a corresponding setter method.` This allows external code to `read the property's value but not modify it.`
+
+    ```
+        Example: 
+        Imagine a Student class where the student's ID is set during object creation and should not be changed afterward
+    ```
+
+    &nbsp;
+
+- ### Write-only Properties : (`set`)
+
+    Writable properties in Java are less common but can be achieved by providing a `public setter method without a corresponding getter method`. This allows external code to `modify the property's value but not directly read it.`
+
+    ```
+        Example: 
+        Imagine a TemperatureSensor class that represents a sensor in a smart home system. The sensor measures the temperature, and the temperature value can be updated by the sensor but should not be directly read by external code
+    ```
+
+    &nbsp;
+
+## 6. Constructors
+
+- Constructors are used to `initialize the state of objects by providing initial values` to their attributes (fields) when they are created.
+
+- They ensure that objects are in a valid and usable state upon instantiation.
+
+### Syntax
+
+- Constructors have the `same name as the class`
+
+- `Don't have a return type` (not even void)
+
+    ```
+    public class rectangle {
+
+        public rectangle() {  ..... Constructor declaration
+
+            .... Constructor body
+
+        }
+    } 
+    ```
+
+## 7. Types of Constructors
+
+### A . `Default` Constructor
+
+- Java provide a default constructor `if no constructors are explicitly defined` in the class. The default constructor `initializes attributes to default values` (e.g., 0 for numeric types, null for references).
+
+- `Default constructor can be explicitly declared`, according to desired default values.
+
+&nbsp;
+
+### Implicit Constructor (`Automatically created` & called) : 
+```
+    public class Rectangle {
+
+            private int length;
+            private int width;
+
+    public static void main(String[] args) {
+
+        Rectangle rect = new Rectangle();   // Calls the default constructor
+
+        // Output: rect.Length: 0, rect.Width: 0 (Default values according language type)
+    }
+}
+```
+&nbsp;
+
+### Explicit Constructor (`Manually created` & called) : 
+
+```
+    public class Rectangle {
+
+            private int length;
+            private int width;
+
+            // Default constructor
+            
+            public Rectangle() {
+                length = 5;
+                width = 5;
+            }
+
+    public static void main(String[] args) {
+
+        Rectangle rect = new Rectangle();   // Calls the default constructor
+
+        // Output: rect.Length: 5, rect.Width: 5 (according to set values)
+    }
+}
+```
+&nbsp;
+
+### B . `Parameterized` Constructor
