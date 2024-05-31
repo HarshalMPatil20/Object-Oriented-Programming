@@ -1,5 +1,6 @@
 
 # Basics of Object-Oriented Programming (OOP)
+
 &nbsp;
 
 ## 1. Introduction to Object-Oriented Programming (OOP)
@@ -358,7 +359,6 @@ class Rectangle
 
 &nbsp;
 
-
 <img src="../src/Datahiding.png" alt="Image Alt Text" width="350" >
 
 &nbsp;
@@ -422,7 +422,7 @@ Properties are typically represented as instance variables (fields) within a cla
         }
     } 
     ```
-    
+
 &nbsp;
 
 ## 7. Types of Constructors
@@ -435,7 +435,8 @@ Properties are typically represented as instance variables (fields) within a cla
 
 &nbsp;
 
-### Implicit Constructor (`Automatically created` & called) : 
+### Implicit Constructor (`Automatically created` & called)
+
 ```
     public class Rectangle {
 
@@ -450,12 +451,13 @@ Properties are typically represented as instance variables (fields) within a cla
     }
 }
 ```
-&nbsp;
 
-### Explicit Constructor (`Manually created` & called) : 
+
+
+### Explicit Constructor (`Manually created` & called)
 
 ```
-    public class Rectangle {
+public class Rectangle {
 
             private int length;
             private int width;
@@ -475,6 +477,89 @@ Properties are typically represented as instance variables (fields) within a cla
     }
 }
 ```
+
 &nbsp;
 
 ### B . `Parameterized` Constructor
+
+- Constructors can `accept parameters to initialize object` attributes with specific values. These are called parameterized constructors.
+
+- In Java and C++, you can define multiple constructors with different parameter lists, `allowing for constructor overloading`.
+
+### Parameterized Constructor (`Accepts Parameters`)
+```
+public class Rectangle {
+
+            private int length;
+            private int width;
+
+            // Parameterized constructor
+
+            public Rectangle (int length, int width) {
+
+                this.length = length;
+                this.width = width;
+            }
+
+    public static void main(String[] args) {
+
+            Rectangle rect = new Rectangle(10, 5); // Calls the parameterized constructor
+
+        // Output: rect.Length: 10, rect.Width: 5
+    }
+}
+```
+&nbsp;
+
+## ``Constructor Overloading`` : Due to Parameterization
+
+- Constructor overloading refers to `having multiple constructors with different parameter lists` in a class.
+
+- This enables `objects to be initialized in various ways`, depending on the arguments provided during object creation.
+
+### Constructor Overloading (`like method overloading`)
+
+```
+    public class Rectangle {
+
+            private int length;
+            private int width;
+
+            // Default constructor
+
+            public Rectangle() {
+                length = 5;
+                width = 5;
+            }
+
+
+            // Parameterized constructor with two parameters
+    
+            public Rectangle(int length, int width) {
+                this.length = length;
+                this.width = width;
+            }
+
+
+            // Parameterized constructor with one parameter (square)
+
+            public Rectangle(int side) {
+                this.length = side;
+                this.width = side;
+            }
+
+        public static void main(String[] args) {
+                Rectangle rect1 = new Rectangle(); // Calls the default constructor
+
+                Rectangle rect2 = new Rectangle(10, 5); // Calls the parameterized constructor with two parameters
+
+                Rectangle square = new Rectangle(7); // Calls the parameterized constructor with one parameter (square)
+
+         // Output: rect1.Length: 5, rect1.Width: 5
+         // Output: rect2.Length: 10, rect2.Width: 5
+         // Output: rect3.Length: 7, rect3.Width: 7
+
+        }
+    }
+
+```
