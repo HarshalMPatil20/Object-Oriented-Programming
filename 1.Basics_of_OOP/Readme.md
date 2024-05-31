@@ -1,5 +1,6 @@
 
 # Basics of Object-Oriented Programming (OOP)
+&nbsp;
 
 ## 1. Introduction to Object-Oriented Programming (OOP)
 
@@ -20,7 +21,11 @@ By using OOP, developers can create modular and reusable code, improve code orga
 - <span style="color:yellow">Inheritance</span>
 - <span style="color:yellow">Polymorphism</span>
 
+&nbsp;
+
 <img src="../src/piller.jpg" alt="Image Alt Text" width="350" >
+
+&nbsp;
 
 ## A. Abstraction
 
@@ -30,6 +35,8 @@ Abstraction is the process of simplifying complex systems by breaking them down 
 
 Example: Imagine a car. As a driver, <span style="color:yellow">you don't need to know</span> how the engine works internally. You only need to know how to start the car, accelerate brake, and change gears.
 
+&nbsp;
+
 ## B. Encapsulation
 
 - ```Encapsulation is the process of grouping data in a single section.```
@@ -37,6 +44,8 @@ Example: Imagine a car. As a driver, <span style="color:yellow">you don't need t
 Encapsulation is the practice of bundling data and methods that operate on that data into a single unit called an object. It provides data hiding and protects the internal state of an object from external interference.
 
 Example: Complete television is single box where all the mechanism are hidden inside the box all are capsuled
+
+&nbsp;
 
 ## C. Inheritance
 
@@ -47,6 +56,8 @@ Inheritance is a mechanism that allows a class to inherit properties and behavio
 
 Example: A old style television (idiot box) is transformed with extra features into slim and smart television where it re-used the properties of old television
 
+&nbsp;
+
 ## D. Polymorphism
 
 - ``` Polymorphism is a concept in which we can execute a single operation in different ways. ```
@@ -55,6 +66,8 @@ Example: A old style television (idiot box) is transformed with extra features i
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects, providing flexibility and extensibility.
 
 Example: Consider a Shape superclass with a method called calculateArea(). We can have different subclasses like Circle and Rectangle that override the calculateArea() method to provide their own implementation.
+
+&nbsp;
 
 ## 2. Class Vs Object
 
@@ -68,7 +81,7 @@ Example: Consider a Shape superclass with a method called calculateArea(). We ca
 
 - Multiple number of objects can be created by one single class  
 
-For example :
+`For example` :
 A house or a car or a television is an object but the design or blueprint of the
 object is a class.
 
@@ -101,6 +114,8 @@ method area which contains all the methods.
 
 <img src="../src/Objectform.png" alt="Image Alt Text" width="350" >
 
+&nbsp;
+
 ## 3. How to Write Classes
 
 ## A. Circle
@@ -128,6 +143,8 @@ class Circle
     }
 ```
 
+&nbsp;
+
 ## B. Rectangle
 
 - Length
@@ -150,6 +167,8 @@ class Rectangle
         } 
     }
 ```
+
+&nbsp;
 
 ## C. Cylinder
 
@@ -177,6 +196,8 @@ class Cylinder
         } 
     }
 ```
+
+&nbsp;
 
 ## D. Account
 
@@ -286,6 +307,8 @@ public class default_tostring {
 }
 ```
 
+&nbsp;
+
 ## 4. Data Hiding
 
 - Data hiding is a concept in object-oriented programming (OOP) that refers to the practice of `hiding the internal state (data)` of an object and requiring all interactions with the object to be performed `through its public interface.`
@@ -333,7 +356,11 @@ class Rectangle
 }
 ```
 
+&nbsp;
+
 <img src="../src/datahiding.png" alt="Image Alt Text" width="350" >
+
+&nbsp;
 
 ## 5. Types of Properties
 
@@ -394,6 +421,8 @@ Properties are typically represented as instance variables (fields) within a cla
         }
     } 
     ```
+    
+&nbsp;
 
 ## 7. Types of Constructors
 
