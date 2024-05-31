@@ -549,15 +549,16 @@ public class Rectangle {
             }
 
         public static void main(String[] args) {
+
                 Rectangle rect1 = new Rectangle(); // Calls the default constructor
 
                 Rectangle rect2 = new Rectangle(10, 5); // Calls the parameterized constructor with two parameters
 
                 Rectangle square = new Rectangle(7); // Calls the parameterized constructor with one parameter (square)
 
-         // Output: rect1.Length: 5, rect1.Width: 5
-         // Output: rect2.Length: 10, rect2.Width: 5
-         // Output: rect3.Length: 7, rect3.Width: 7
+            // Output: rect1.Length: 5, rect1.Width: 5
+            // Output: rect2.Length: 10, rect2.Width: 5
+            // Output: rect3.Length: 7, rect3.Width: 7
 
         }
     }
