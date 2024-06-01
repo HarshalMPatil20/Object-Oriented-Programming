@@ -53,7 +53,7 @@ git clone https://github.com/HarshalMPatil20/Object-Oriented-Programming
 ## Roadmap
 ### Basics of Object-Oriented Programming [&nbsp; Dive in!](Basics%20of%20Object-Oriented%20Programming/Readme.md#principles-of-object-oriented-programming)
 
-   1. Introduction to Object-Oriented Programming (OOP) [&nbsp;Check out > >](Basics%20of%20Object-Oriented%20Programming/Readme.md#1.introduction-to-object-oriented-programming-oop)
+   1. Introduction to Object-Oriented Programming (OOP) [&nbsp;Check out  >](Basics%20of%20Object-Oriented%20Programming/Readme.md#1.introduction-to-object-oriented-programming-oop)
 
       - Principles Of Object-Oriented Programming [&nbsp;Check out >](Basics%20of%20Object-Oriented%20Programming/Readme.md#principles-of-object-oriented-programming)
          - Abstraction
