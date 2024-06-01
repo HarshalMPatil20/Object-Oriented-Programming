@@ -58,7 +58,7 @@ class Rectangle
 }
         
 
-public class example3 {
+public class C_data_hiding {
 
     public static void main(String[] args) {
         Rectangle r=new Rectangle();

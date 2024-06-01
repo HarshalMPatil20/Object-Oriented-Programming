@@ -36,7 +36,7 @@ class Student
     }
 }
 
-public class example2
+public class B_tostring_method
 {
 
     public static void main(String[] args) 

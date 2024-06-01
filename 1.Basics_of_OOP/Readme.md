@@ -86,7 +86,9 @@ Example: Consider a Shape superclass with a method called calculateArea(). We ca
 A house or a car or a television is an object but the design or blueprint of the
 object is a class.
 
-### Example Program
+### Example Program 
+
+
 
 ```
 class Television { 
@@ -107,6 +109,7 @@ class test
     } 
 }
 ```
+[For Demo Try it Here](A_class_circle.java)
 
 - In java there is an area inside main memory which is known as
 method area which contains all the methods.
@@ -273,7 +276,7 @@ class overriden_tostring {
 
 ```
 
-[For Demo Try it Here](example2.java)
+[For Demo Try it Here](B_tostring_method.java)
 
 &nbsp;
 
@@ -324,7 +327,7 @@ In languages like Java, you can achieve data hiding using `access modifiers`:
 
 - `Private`: Limits access to members (variables or methods) only within the same class.
 
-### Example  : [For Demo Try it Here](example3.java)
+### Example  : [For Demo Try it Here](C_data_hiding.java)
 
 ```
 class Rectangle
