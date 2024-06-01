@@ -3,7 +3,7 @@
 
 &nbsp;
 
-## 1. Introduction to Object-Oriented Programming (OOP)
+## 1.Introduction to Object-Oriented Programming (OOP)(#IntroductiontoObjectOrientedProgramming)
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which are instances of classes. It focuses on the concepts of abstraction, encapsulation, inheritance, and polymorphism.
 
@@ -287,7 +287,7 @@ class overriden_tostring {
 - This default implementation returns a string that consists of `the class name, @ symbol, and the object's hash code`
 
 ```
-public class Car {
+class Car {
     String make;
     String model;
     int year;
@@ -567,3 +567,51 @@ public class Rectangle {
     }
 
 ```
+## 8. Array of Objects
+
+- Creating an array of objects involves initializing an array where each element is an instance of a particular class.
+
+- here are the general steps for creating an array of objects in Java:
+
+    1. `Declare the Array` : Declare an array variable of the class type. This array will hold multiple objects of the class.
+
+    2. `Create Objects` : Initialize each element of the array with objects of the class using the new keyword and constructor.
+
+### Array of Objects :
+
+```
+public class Rectangle {
+
+            private int length;
+            private int width;
+
+            // Parameterized constructor
+
+            public Rectangle(int length, int width) {
+                this.length = length;
+                this.width = width;
+            }
+
+    public static void main(String[] args) {
+
+            // 1. Create an array of Rectangle objects
+
+            Rectangle[] rects = new Rectangle[4];
+
+            // 2. Initialize each element in the array with a Rectangle object
+
+            rects[0] = new Rectangle(10, 5);
+            rects[1] = new Rectangle(7, 8);
+            rects[2] = new Rectangle(30, 15);
+            rects[3] = new Rectangle(4, 4);
+
+        }
+    }
+
+```
+
+&nbsp;
+
+<img src="../src/arrayofobjects.png" alt="Image Alt Text" width="650" >
+
+### Example  : [For Demo Try it Here](D_Array_of_objects.java)
