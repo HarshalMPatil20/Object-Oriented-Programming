@@ -3,7 +3,7 @@
 
 &nbsp;
 
-## 1.Introduction to Object-Oriented Programming (OOP)(#IntroductiontoObjectOrientedProgramming)
+## 1.Introduction to Object-Oriented Programming (OOP) {#IntroductiontoObjectOrientedProgramming}
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which are instances of classes. It focuses on the concepts of abstraction, encapsulation, inheritance, and polymorphism.
 
@@ -230,7 +230,7 @@ class Account
 
 ## ``Important`` : `tostring()`
 
-### A. Using the `Overriden` toString() Method
+### A. Using the `Overriden` toString() Method 
 
 - The `toString()` method in Java is used to return a string representation of an object.
 
