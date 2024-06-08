@@ -3,7 +3,7 @@
 
 &nbsp;
 
-## 1.Introduction to Object-Oriented Programming (OOP) 
+## 1. Introduction to Object-Oriented Programming (OOP) 
 
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which are instances of classes. It focuses on the concepts of abstraction, encapsulation, inheritance, and polymorphism.
@@ -15,6 +15,19 @@ In OOP, classes serve as blueprints for creating objects. They define the attrib
 <span style="color:yellow">Abstraction</span>, <span style="color:yellow">encapsulation</span>, <span style="color:yellow">inheritance</span>, and <span style="color:yellow">polymorphism</span> are the four fundamental principles of OOP. They provide a way to structure and design software systems, making them more flexible, extensible, and easier to understand and maintain.
 
 By using OOP, developers can create modular and reusable code, improve code organization and readability, and build complex systems that are easier to manage and evolve over time.
+
+## &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OOP &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; V/s  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; POP
+
+|Sr.  | Key  | OOP  | POP   |
+| -------- | -------- | -------- |----------|
+| 1  | Definition  | OOP stands for `Object` Oriented Programming.|  POP stands for `Procedural` Oriented Programming.|
+| 2  | Approach  | OOP follows `bottom up` approach.| POP follows `top down` approach.         |
+| 3  | Division  | A program is divided to `objects and their interactions`.| A program is divided into `functions and they interacts`. |
+| 4  | Inheritance supported  | Inheritance is `supported`.| Inheritance is `not supported`. |
+| 5  | Access control  | Access control is `supported` via access modifiers.| `No access modifiers` are supported.         |
+| 6   | Data Hiding  | Encapsulation is used to `hide data`.|   `No data hiding` present. Data is globally accessible.       |
+| 7   | Example  |Java, C++, C#, Python, R, PHP, JavaScript, Ruby etc. |  C, VB, FORTRAN, Pascal |
+
 
 ## Principles Of Object-Oriented Programming
 
