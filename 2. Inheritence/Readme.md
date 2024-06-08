@@ -23,6 +23,8 @@ Classes__.
     <img src="../src/Gen.png" alt="Image Alt Text" width="750" >
     
 
+&nbsp;
+
 ### __B . Specialization__
 
 - Specialization, on the other hand, refers to the process of creating `a more specific class from an existing class`, __adding new attributes and behaviors__.
