@@ -24,7 +24,7 @@ By using OOP, developers can create modular and reusable code, improve code orga
 | 2  | Approach  | OOP follows `bottom up` approach.| POP follows `top down` approach.         |
 | 3  | Division  | A program is divided to `objects and their interactions`.| A program is divided into `functions and they interacts`. |
 | 4  | Inheritance supported  | Inheritance is `supported`.| Inheritance is `not supported`. |
-| 5  | Access control  | Access control is `supported` via access modifiers.| `No access modifiers` are supported.         |
+| 5  | Access control  | Access control is `supported` via access modifiers.| `No access modifiers` are supported.|
 | 6   | Data Hiding  | Encapsulation is used to `hide data`.|   `No data hiding` present. Data is globally accessible.       |
 | 7   | Example  |Java, C++, C#, Python, R, PHP, JavaScript, Ruby etc. |  C, VB, FORTRAN, Pascal |
 
