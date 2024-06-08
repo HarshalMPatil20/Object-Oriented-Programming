@@ -20,7 +20,7 @@ Classes__.
 
 - __Example__ : 
 
-    <img src="../src/gen.png" alt="Image Alt Text" width="750" >
+    <img src="../src/Gen.png" alt="Image Alt Text" width="750" >
     
 
 ### __B . Specialization__
