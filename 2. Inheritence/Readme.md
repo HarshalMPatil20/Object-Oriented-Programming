@@ -1,4 +1,14 @@
-# Inheritance  
+# __Inheritance__ : _The Code Legacy Continues..._
+
+ __Like inheriting your parent's code, but without the family drama!__
+
+### _Why Inheritance_ ?
+
+- Reusability
+- Extensibility
+- Polymorphism
+- Class Hierarchy
+- Maintainability
 
 &nbsp;
 
@@ -18,10 +28,9 @@ Classes__.
 
 - For achieving Generalization __Abstract Classes are Used__.
 
-- __Example__ : 
+- __Example__ :
 
     <img src="../src/Gen.png" alt="Image Alt Text" width="750" >
-    
 
 &nbsp;
 
@@ -36,10 +45,8 @@ features of existing concrete class and adding new features to it.__
 
 - Specialization means __Top Down__.  
 
-- Specialisation is achieved using __Inheritance__. 
+- Specialization is achieved using __Inheritance__.
 
-- __Example__ : 
+- __Example__ :
 
     <img src="../src/spe.png" alt="Image Alt Text" width="750" >
-    
-
