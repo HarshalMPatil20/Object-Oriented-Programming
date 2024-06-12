@@ -14,7 +14,7 @@
 
 &nbsp;
 
-## 1. Generalization VS specialization
+## __1. Generalization VS specialization__
 
 ### __A . Generalization__
 
@@ -52,3 +52,109 @@ features of existing concrete class and adding new features to it.__
 - __Example__ :
 
     <img src="../src/spe.png" alt="Image Alt Text" width="750" >
+
+## __2. What is Inheritance__
+
+Inheritance allows one class (the subclass or derived class) __to inherit__ `attributes` and `methods` from another class (the superclass or base class).
+
+## Example
+
+<img src="../src/whatisinheritance.png" alt="Image Alt Text" width="350" >
+
+### Explanation
+
+__1. ___Circle___ (Superclass)__ :
+
+- __Attributes__: `radius`
+- __Constructor__: `Circle()` - Default Constructor.
+- __Methods__: `area()`, `Perimeter()` & `Circumference()`
+
+&nbsp;
+
+__2. ___Cylinder___ (Subclass)__ :
+
+- __Inherits from `Circle`__.
+- ___Additional___ __Attributes__: `height`
+- __Constructor__: `Cylinder()` - Default Constructor.
+- ___Additional___ __Methods__: `Volume()`
+
+&nbsp;
+
+### Code
+
+```
+    class Circle
+        {
+            public double radius;
+
+            public double area()
+            {
+                return Math.PI * radius *radius;
+            }
+    
+            public double perimeter()
+            {
+                return 2*Math.PI*radius;
+            }
+
+            public double circumference()
+            {
+                return perimeter();
+            }
+        }
+
+
+    class Cylinder extends Circle
+        {
+            public double height;
+    
+            public double volume()
+            {
+                return area()*height;
+            }
+    
+        }
+        
+
+    public class main 
+    {
+       public static void main(String[] args) 
+       {
+           Cylinder c=new Cylinder();
+          
+           c.radius=7;
+           c.height=10;
+           
+           System.out.println("Volume "+c.volume());
+           System.out.println("Area "+c.area());       
+        } 
+    }
+```
+
+## __3. Constructors in Inheritance__
+
+- Constructors are the __methods__ of class which are automatically called when an object is created.
+
+- Constructors are executed from `Top to Bottom` Class.
+
+- To make the child class object Firstly the parent class constructor must be created.
+
+## Example
+
+                +---------------------+
+                |     Class Parent    |
+                |     Constructor()   |
+                +---------------------+
+                          |
+                          v
+                +---------------------+
+                |     Class Child     |
+                |     Constructor()   |
+                +---------------------+
+                          |
+                          v
+                +---------------------+
+                |   Class Grandchild  |
+                |   Constructor()     |
+                +---------------------+
+
