@@ -141,20 +141,75 @@ __2. ___Cylinder___ (Subclass)__ :
 
 ## Example
 
-                +---------------------+
-                |     Class Parent    |
-                |     Constructor()   |
-                +---------------------+
-                          |
-                          v
-                +---------------------+
-                |     Class Child     |
-                |     Constructor()   |
-                +---------------------+
-                          |
-                          v
-                +---------------------+
-                |   Class Grandchild  |
-                |   Constructor()     |
-                +---------------------+
+                        +---------------------+
+                        |     Class Parent    |
+                        |     Constructor()   |
+                        +---------------------+
+                                  |
+                                  v
+                        +---------------------+
+                        |     Class Child     |
+                        |     Constructor()   |
+                        +---------------------+
+                                  |
+                                  v
+                        +---------------------+
+                        |   Class Grandchild  |
+                        |   Constructor()     |
+                        +---------------------+
 
+### Explanation
+- There are Three classes `Parent`, `Child` & `GrandChild`.
+- __Parent__ is inherited by __Child__ & __Child__ is inherited by __GrandChild__.
+- `Parent <- Child` & `Child <- GrandChild`.
+
+- So, the Order of Constructors should be,
+    1. Constructor of `Parent`
+    2. Constructor of `child`
+    3. Constructor of `GrandChild`
+
+### Code 
+
+```
+    class Parent
+    {
+        public Parent()
+        {
+            System.out.println("Parent Constructor");
+        }
+                
+    }
+
+    class Child extends Parent   //Child inherited Parent  
+    {
+        public Child()
+        {
+            System.out.println("Child Constructor");
+        }
+    }
+
+    class GrandChild extends Child  //GrandChild inherited Child 
+    {
+        public GrandChild()
+        {
+            System.out.println("Grand Child Constructor");
+        }
+    }
+
+public class Constructors_In_Inheritance 
+{
+
+    public static void main(String[] args) 
+    {
+        GrandChild GC = new GrandChild();        
+    }
+    
+}
+```
+### Output of Code :
+
+```
+Parent Constructor
+Child Constructor
+Grand Child Constructor
+```
