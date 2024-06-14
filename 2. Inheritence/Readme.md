@@ -749,3 +749,6 @@ public class Main {
 &nbsp;
 
 <img src="../src/dynamicmethoddispatch.png" alt="Image Alt Text" width="500" >
+
+> [!CAUTION]
+> sub class reference and super class object is not allowed in Dynamic method dispatch. 
