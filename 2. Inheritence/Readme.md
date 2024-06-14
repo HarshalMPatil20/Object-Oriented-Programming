@@ -506,6 +506,44 @@ public class Cylinder extends Circle {
 ```
 
 &nbsp;
+> [!NOTE]  
+> You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
+
+#### Example : 
+```java
+class Circle
+{
+    double radius ;
+}
+
+class Cylinder extends Circle
+{
+    double height;
+
+    Cylinder(double radius, double height)
+
+    {
+        this.radius = radius;  // variable from super class
+        this.height = height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Cylinder c = new Cylinder(2.5, 5.0);
+        System.out.println(c.radius);
+        System.out.println(c.height);
+    }
+}
+```
+#### Output:
+
+```
+2.5
+5.0
+```
+
 
 > [!NOTE]  
 > If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class
