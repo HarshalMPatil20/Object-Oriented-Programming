@@ -461,6 +461,8 @@ Properties are typically represented as instance variables (fields) within a cla
 
 - `Default constructor can be explicitly declared`, according to desired default values and this also called as `Non-parameterized constructor`
 
+&nbsp;
+
 > [!NOTE]
 > Default Constructors are overshadowed by any Constructor and cannot be called by default, rather we have to use other constructors.
 
