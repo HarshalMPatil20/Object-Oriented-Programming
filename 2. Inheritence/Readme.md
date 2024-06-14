@@ -598,8 +598,8 @@ Variable from Child
 ```
 
 &nbsp;
-
-## __5. Method Overriding__
+## $\textcolor{violet}{5. Method\ Overriding}$
+## __5. Method Overriding__ 
 
 - Method overriding is a feature that allows a subclass (child class) to provide a specific implementation of a method that is already defined in its superclass (parent class).
 - The purpose of overriding is to allow the subclass to modify or extend the behavior of the method as defined in the parent class.
