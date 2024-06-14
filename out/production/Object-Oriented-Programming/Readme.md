@@ -700,8 +700,7 @@ public class C_method_overriding {
 
 - When a `super class reference holding the object of sub class` and overridden method is called then method of object will be called it is ___Dynamic Method Dispatch___.
 
-### __Example__ : [Try it Here](D_Dynamic_method_dispatch.java)
-Let's illustrate dynamic method dispatch with a Java example involving superclass `Animal` and subclass `Dog` :
+### __Example__ : [Try it Here](C_Method_overriding.java)
 
 ```java
 // Superclass
@@ -736,17 +735,6 @@ public class Main {
 
 
 ```
-### Explanation :
 
-&nbsp; __1. Superclass Reference__ __'Animal'__ &nbsp; & &nbsp; __Subclass Object__ __'Dog'__ :
-
-- `Animal` myAnimal = new `Dog()`  assigns a __Dog object__ to __Animal Reference__.
-
-&nbsp; __2. Method Call__ :
-
-- When `myAnimal.makeSound()` is called, the JVM determines the actual class of the object (`Dog`) ___at runtime___ and invokes the corresponding overridden method (`Dog.makeSound()`).
-
-&nbsp;
-
-<img src="../src/dynamicmethoddispatch.png" alt="Image Alt Text" width="500" >
+<img src="../src/dynamicmethoddispatch.png" alt="Image Alt Text" width="600" >
 
