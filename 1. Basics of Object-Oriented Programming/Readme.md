@@ -1,5 +1,6 @@
 
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
+&nbsp;
 
 # Basics of Object-Oriented Programming (OOP)
 

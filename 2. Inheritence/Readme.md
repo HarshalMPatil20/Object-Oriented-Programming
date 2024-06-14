@@ -1,4 +1,5 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
+&nbsp;
 
 # __Inheritance__ : _The Code Legacy Continues..._
 
@@ -387,8 +388,6 @@ The __`this`__ and __`super`__ keywords in Java are both used to refer to object
      2. Calling another constructor from a constructor _(constructor chaining)_.
 
 
-> [!NOTE]  
-> You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
 
 &nbsp;
 ### __B. `super` Keyword :__
@@ -416,6 +415,8 @@ The __`this`__ and __`super`__ keywords in Java are both used to refer to object
 | 3  | Used for | Accessing instance variables and methods| Accessing superclass methods and constructors|
 | 4  | Constructor Chaining | Calls another constructor in the same class| Calls a constructor of the superclass |
 | 5  |Method Invocation  | Invokes methods of the current class| Invokes methods of the superclass|
+
+&nbsp;
 
 ### __Detailed Comparison with Examples :__
 
@@ -459,6 +460,7 @@ public class Circle {
     }
 }
 ```
+&nbsp;
 
 ### `super` Keyword :
 
