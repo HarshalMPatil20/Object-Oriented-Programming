@@ -82,7 +82,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
 ### Code
 
-```
+```java
     class Circle
         {
             public double radius;
@@ -145,6 +145,8 @@ __2. ___Cylinder___ (Subclass)__ :
 
 ### __Example :__ [Try it Here](A_Constructors_In_Inheritance.java)
 
+```sql
+
                         +---------------------+
                         |     Class Parent    |
                         |     Constructor()   |
@@ -162,6 +164,8 @@ __2. ___Cylinder___ (Subclass)__ :
                         |   Constructor()     |
                         +---------------------+
 
+```                        
+
 ### Explanation :
 - There are Three classes `Parent`, `Child` & `GrandChild`.
 - __Parent__ is inherited by __Child__ & __Child__ is inherited by __GrandChild__.
@@ -174,7 +178,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
 ### Code :
 
-```
+```java
     class Parent
     {
         public Parent()
@@ -215,7 +219,7 @@ public class Constructors_In_Inheritance
 
 ### Output of Code :
 
-```
+```java
 Parent Constructor
 
 Parent Constructor
@@ -237,7 +241,7 @@ Grand Child Constructor
 
 ### __Example__ : [Try it Here](B_Parameterized_constructors.java)
 
-```
+```java
 
 class Parent
 {
@@ -302,7 +306,7 @@ public class Main {
 ```
 ### Output of Code : 
 
-```
+```java
 1. Both are Non-parameterized
 Non-Parameterized Constructor of parent
 x = 0
@@ -323,7 +327,7 @@ y = 20
 ```
 
 ### Explanation :
-```
+```sql
             +-----------------------------+
             |    Superclass: Parent       |
             +-----------------------------+

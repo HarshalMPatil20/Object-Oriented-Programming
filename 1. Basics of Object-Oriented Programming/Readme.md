@@ -106,7 +106,7 @@ object is a class.
 
 
 
-```
+```java
 class Television { 
 
     private int channel; 
@@ -145,7 +145,7 @@ method area which contains all the methods.
 
 <img src="../src/circle.png" alt="Image Alt Text" width="150" >
 
-```
+```java
 class Circle 
     {
         public double radius;
@@ -173,7 +173,7 @@ class Circle
 
 <img src="../src/rectangle.png" alt="Image Alt Text" width="250" >
 
-```
+```java
 class Rectangle 
     { 
         public int length; 
@@ -198,7 +198,7 @@ class Rectangle
 
 <img src="../src/cylinder.png" alt="Image Alt Text" width="200" >
 
-```
+```java
 class Cylinder 
     { 
         public double radius; 
@@ -226,7 +226,7 @@ class Cylinder
 - Name
 - Balance
 
-```
+```java
 class Account
     { 
         public long account_number; 
@@ -256,7 +256,7 @@ class Account
 
 - Here's how you can use and override the toString() method in a Java class :
 
-```
+```java
 public class Car {
     String make;
     String model;
@@ -304,7 +304,7 @@ class overriden_tostring {
 
 - This default implementation returns a string that consists of `the class name, @ symbol, and the object's hash code`
 
-```
+```java
 class Car {
     String make;
     String model;
@@ -348,7 +348,7 @@ In languages like Java, you can achieve data hiding using `access modifiers`:
 
 ### Example  : [For Demo Try it Here](C_data_hiding.java)
 
-```
+```java
 class Rectangle
 {
     private double length;
@@ -417,7 +417,7 @@ Properties are typically represented as instance variables (fields) within a cla
     Writable properties in Java are less common but can be achieved by providing a `public setter method without a corresponding getter method`. This allows external code to `modify the property's value but not directly read it.`
 
     ```
-        Example: 
+    Example: 
         Imagine a TemperatureSensor class that represents a sensor in a smart home system. The sensor measures the temperature, and the temperature value can be updated by the sensor but should not be directly read by external code
     ```
 
@@ -436,7 +436,7 @@ Properties are typically represented as instance variables (fields) within a cla
 
 - `Don't have a return type` (not even void)
 
-    ```
+    ```java
     public class rectangle {
 
         public rectangle() {  ..... Constructor declaration
@@ -468,7 +468,7 @@ Properties are typically represented as instance variables (fields) within a cla
 
 ### __Default Constructor__ : Implicit Constructor (`Automatically created` & called)
 
-```
+```java
     public class Rectangle {
 
             private int length;
@@ -487,7 +487,7 @@ Properties are typically represented as instance variables (fields) within a cla
 
 ### __Non-parameterized Constructor__ : Explicit Constructor (`Manually created` & called)
 
-```
+```java
 public class Rectangle {
 
             private int length;
@@ -519,7 +519,7 @@ public class Rectangle {
 - In Java and C++, you can define multiple constructors with different parameter lists, `allowing for constructor overloading`.
 
 ### Parameterized Constructor (`Accepts Parameters`)
-```
+```java
 public class Rectangle {
 
             private int length;
@@ -552,7 +552,7 @@ public static void main(String[] args) {
 
 ### Constructor Overloading (`like method overloading`)
 
-```
+```java
     public class Rectangle {
 
             private int length;
@@ -610,7 +610,7 @@ public static void main(String[] args) {
 
 ### Array of Objects :
 
-```
+```java
 public class Rectangle {
 
             private int length;
