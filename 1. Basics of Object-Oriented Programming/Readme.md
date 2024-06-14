@@ -597,6 +597,41 @@ public static void main(String[] args) {
     }
 
 ```
+
+&nbsp;
+
+> [!IMPORTANT]
+> Default constructors cannot co-exist with other constructors, if any other constructor is declared then default constructor is not accessible. you have to compulsorily use other constructors.
+
+Example : 
+``` java
+class Circle
+{
+    double radius ;
+    
+    Circle(double radius)   // Explicitly declared constructor
+    {   
+         this.radius=radius;
+    }
+   
+}
+
+class Cylinder extends Circle
+{
+    double height;
+    
+    Cylinder(double radius, double height)
+
+    {
+        super(radius); 
+
+        // this.radius = radius 
+        // will throw error because we can't use default constructor as explicitly declared constructor exists so default constructor is inaccessible.
+
+        this.height=height;
+    }
+}
+```
 [&nbsp; >  Back to main](../Readme.md#roadmap)
 ## 8. Array of Objects
 

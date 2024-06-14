@@ -386,6 +386,10 @@ The __`this`__ and __`super`__ keywords in Java are both used to refer to object
 
      2. Calling another constructor from a constructor _(constructor chaining)_.
 
+
+> [!NOTE]  
+> You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
+
 &nbsp;
 ### __B. `super` Keyword :__
 
@@ -400,6 +404,8 @@ The __`this`__ and __`super`__ keywords in Java are both used to refer to object
      1. Accessing superclass methods and variables.
 
      2. Calling a constructor of the superclass from a subclass constructor.
+
+
 
 &nbsp;
 
@@ -433,5 +439,111 @@ public class Circle {
         return this.radius;
     }
 }
+```
+&nbsp;
 
+__2. Constructor Chaining :__
+
+```java
+public class Circle {
+    private double radius;
+    private String color;
+
+    public Circle() {
+        this(1.0, "red"); // Calls the parameterized constructor
+    }
+
+    public Circle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
+    }
+}
+```
+
+### `super` Keyword :
+
+__1. Accessing Superclass Constructor :__
+
+```java
+public class Circle {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+}
+
+public class Cylinder extends Circle {
+    private double height;
+
+    public Cylinder(double radius, double height) {
+        super(radius); // Calls the parameterized constructor of Circle
+        this.height = height;
+    }
+}
+```
+&nbsp;
+
+__2. Accessing Superclass Methods :__
+
+```java
+public class circle {
+    private double radius;
+
+    public double area() {
+        return 3.14 * radius * radius;
+    }
+}
+
+public class Cylinder extends Circle {
+    double height;
+
+    public double Volume() {
+        double Area = super.area();   // calls area method from circle 
+        return Area * height;
+    }
+}
+```
+
+&nbsp;
+
+> [!NOTE]  
+> If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class
+
+#### Example : 
+``` java
+class Parent
+{
+    String Variable = "Variable from Parent"; // Same name variable
+   
+}
+
+class Child extends Parent
+{
+    String Variable = "Variable from Child"; // Same name variable
+    
+    void display()
+    {
+        System.out.println(super.Variable); // Variable from super class
+        System.out.println(Variable); // Variable from current class
+        // or System.out.println(this.Variable);
+    }
+}
+
+
+public class main 
+{
+    public static void main(String[] args) 
+    {
+           Child c = new Child();
+           c.display();
+    }   
+}
+```
+
+#### Output:
+
+```
+Variable from Parent
+Variable from Child
 ```
