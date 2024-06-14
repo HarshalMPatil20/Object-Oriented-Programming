@@ -165,9 +165,10 @@ __2. ___Cylinder___ (Subclass)__ :
                         |   Constructor()     |
                         +---------------------+
 
-```                        
+```
 
-### Explanation :
+### Explanation
+
 - There are Three classes `Parent`, `Child` & `GrandChild`.
 - __Parent__ is inherited by __Child__ & __Child__ is inherited by __GrandChild__.
 - `Parent <- Child` & `Child <- GrandChild`.
@@ -177,7 +178,7 @@ __2. ___Cylinder___ (Subclass)__ :
     2. Constructor of `child`
     3. Constructor of `GrandChild`
 
-### Code :
+### Code
 
 ```java
     class Parent
@@ -218,7 +219,7 @@ public class Constructors_In_Inheritance
 }
 ```
 
-### Output of Code :
+### Output of Code
 
 ```java
 Parent Constructor
@@ -230,13 +231,14 @@ Parent Constructor
 Child Constructor
 Grand Child Constructor
 ```
+
 &nbsp;
 
 ### __B. Calling Parameterized Constructors :__ `super()`
 
 - In above example, the constructors of Super Class which are called by Default are `Non-Parameterized Constructor or Default Constructor`.
 
-- But if we want to __Call Parameterized Constructor for Super Class__ while creating object of Sub class, we use `super` keyword to address respective Super class of current constructor class. 
+- But if we want to __Call Parameterized Constructor for Super Class__ while creating object of Sub class, we use `super` keyword to address respective Super class of current constructor class.
 
 - `super` : Nickname of super-class constructor in sub-class constructor.
 
@@ -305,7 +307,8 @@ public class Main {
 
 }
 ```
-### Output of Code : 
+
+### Output of Code
 
 ```java
 1. Both are Non-parameterized
@@ -327,7 +330,8 @@ Parameterized Constructor of child
 y = 20
 ```
 
-### Explanation :
+### Explanation
+
 ```sql
             +-----------------------------+
             |    Superclass: Parent       |
@@ -369,6 +373,7 @@ y = 20
 ```
 
 &nbsp;
+
 ## __4. `this`  v/s  `super` Keyword__
 
 The __`this`__ and __`super`__ keywords in Java are both used to refer to objects within the class hierarchy, but they serve different purposes and are used in different contexts. Here’s a detailed comparison along with examples to illustrate their usage:
@@ -377,38 +382,35 @@ The __`this`__ and __`super`__ keywords in Java are both used to refer to object
 
 - __Context__ : Within the same class.
 
-- __Purpose__ : 
-    - Refers to the current object instance.
-    - Used to __resolve naming conflicts__ between instance variables and parameters.
-    - Can be used to __call other constructors__ in the same class.
+- __Purpose__ :
+  - Refers to the current object instance.
+  - Used to __resolve naming conflicts__ between instance variables and parameters.
+  - Can be used to __call other constructors__ in the same class.
 
 - __Use Cases__ :
      1. Accessing instance variables and methods.
 
      2. Calling another constructor from a constructor _(constructor chaining)_.
 
-
-
 &nbsp;
+
 ### __B. `super` Keyword :__
 
 - __Context__ : In the context of a subclass.
 
-- __Purpose__ : 
-    - Refers to the superclass (parent class) object instance.
-    - Used to access __superclass methods and constructors__.
-    - Used to call a method from the superclass that has been overridden in the subclass.
+- __Purpose__ :
+  - Refers to the superclass (parent class) object instance.
+  - Used to access __superclass methods and constructors__.
+  - Used to call a method from the superclass that has been overridden in the subclass.
 
 - __Use Cases__ :
      1. Accessing superclass methods and variables.
 
      2. Calling a constructor of the superclass from a subclass constructor.
 
-
-
 &nbsp;
 
-|Sr.  | Feature | 	`this` Keyword | `super` Keyword   |
+|Sr.  | Feature |  `this` Keyword | `super` Keyword   |
 | -------- | -------- | -------- |----------|
 | 1  | Context |Within the same class|  In the context of a subclass|
 | 2  | Refers to  | Current object instance | Superclass (parent class) object instance |
@@ -420,7 +422,7 @@ The __`this`__ and __`super`__ keywords in Java are both used to refer to object
 
 ### __Detailed Comparison with Examples :__
 
-### `this` Keyword :
+### `this` Keyword
 
 __1. Resolving Naming Conflicts :__
 
@@ -441,6 +443,7 @@ public class Circle {
     }
 }
 ```
+
 &nbsp;
 
 __2. Constructor Chaining :__
@@ -460,9 +463,10 @@ public class Circle {
     }
 }
 ```
+
 &nbsp;
 
-### `super` Keyword :
+### `super` Keyword
 
 __1. Accessing Superclass Constructor :__
 
@@ -484,6 +488,7 @@ public class Cylinder extends Circle {
     }
 }
 ```
+
 &nbsp;
 
 __2. Accessing Superclass Methods :__
@@ -511,7 +516,8 @@ public class Cylinder extends Circle {
 > [!NOTE]  
 > You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
 
-#### Example : 
+#### Example
+
 ```java
 class Circle
 {
@@ -539,7 +545,8 @@ public class Main {
     }
 }
 ```
-#### Output:
+
+#### Output
 
 ```
 2.5
@@ -548,11 +555,11 @@ public class Main {
 
 &nbsp;
 
-
 > [!NOTE]  
 > If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class
 
-#### Example : 
+#### Example
+
 ``` java
 class Parent
 {
@@ -583,9 +590,99 @@ public class main
 }
 ```
 
-#### Output:
+#### Output
 
 ```
 Variable from Parent
 Variable from Child
 ```
+
+&nbsp;
+
+## __5. Method Overriding__
+
+- Method overriding is a feature that allows a subclass (child class) to provide a specific implementation of a method that is already defined in its superclass (parent class).
+- The purpose of overriding is to allow the subclass to modify or extend the behavior of the method as defined in the parent class.
+
+- Method will be called depending on the object.
+- Method overriding is achieved in ___Inheritance___.
+
+__Example :__
+
+<img src="../src/methodoverriding.png" alt="Image Alt Text" width="400" >
+
+### __Key Points :__
+
+__1. Same Method Signature :__ The overriding method must have the `same name`, `same return type`, and `same parameter list` as the method in the superclass.
+
+__2. @Override Annotation :__ While not mandatory, it’s a good practice to use the `@Override` annotation. It helps the compiler to ensure that you are actually overriding a method from the superclass.
+
+__3. Access Modifiers :__ The overriding method `cannot have a more restrictive access modifier than the method being overridden` (e.g., you cannot override a `public` method with a `protected` method).
+
+> [!CAUTION]
+> 1. __Final__ and __static__ methods cannot be overridden.
+> 2. Method can be overridden with same or lenient (public, protected) access specifiers but the __stricter(private) access specifiers cannot be used in sub class__. 
+
+### __Example__ : [Try it Here](C_Method_overriding.java)
+
+```java
+// Superclass
+class Animal {
+
+    // Method to be overridden
+    public void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+
+}
+
+// Subclass
+class Dog extends Animal {
+
+    // Overriding the makeSound() method
+    @Override
+    public void makeSound() {
+        System.out.println("Dog barks");
+    }
+
+}
+
+public class C_method_overriding {
+    public static void main(String[] args) {
+
+        // Creating an instance of Animal
+        Animal myAnimal = new Animal();
+        myAnimal.makeSound();           // Output: Animal makes a sound
+
+        // Creating an instance of Dog
+        Dog myDog = new Dog();
+        myDog.makeSound();              // Output: Dog barks
+    }
+
+}
+
+```
+
+### Explanation
+
+&nbsp; __1. Superclass__ ___'Animal'___ :
+
+- Defines a method `makeSound()` that prints "Animal makes a sound".
+
+&nbsp; __2. Subclass__ ___'Dog'___ :
+
+- ___`Overrides`___ the `makeSound()` method to print "Dog barks".
+
+- Uses the `@Override` annotation to indicate that the method is overridden.
+
+&nbsp; __3. Main method__ :
+
+- Creates instances of 'Animal' and 'Dog 'and calls the `makeSound()` method on each to demonstrate method overriding.
+
+### Benefits of Method Overriding
+
+1. __Runtime Polymorphism__ : Allows a class to define specific behavior that will be used when an object of that class is used through a reference of the superclass type.
+
+2. __Code Reusability__ : Enables the reuse of existing methods with specific implementations for subclasses without changing the parent class.
+
+3. __Flexibility__ : Provides flexibility to add or change behaviors of methods in subclasses, making the code easier to extend and maintain.
