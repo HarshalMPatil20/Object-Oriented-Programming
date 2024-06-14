@@ -530,7 +530,7 @@ class Cylinder extends Circle
 
 public class Main {
     public static void main(String[] args) {
-        
+
         Cylinder c = new Cylinder(2.5, 5.0);
         System.out.println(c.radius);
         System.out.println(c.height);
@@ -543,6 +543,8 @@ public class Main {
 2.5
 5.0
 ```
+
+&nbsp;
 
 
 > [!NOTE]  
