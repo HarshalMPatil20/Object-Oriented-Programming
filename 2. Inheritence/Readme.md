@@ -598,7 +598,6 @@ Variable from Child
 ```
 
 &nbsp;
-## $\textcolor{yellow}{5. Method\ Overriding}$
 ## __5. Method Overriding__ 
 
 - Method overriding is a feature that allows a subclass (child class) to provide a specific implementation of a method that is already defined in its superclass (parent class).
@@ -663,7 +662,7 @@ public class C_method_overriding {
 
 ```
 
-### Explanation
+### Explanation :
 
 &nbsp; __1. Superclass__ ___'Animal'___ :
 
@@ -679,10 +678,14 @@ public class C_method_overriding {
 
 - Creates instances of 'Animal' and 'Dog 'and calls the `makeSound()` method on each to demonstrate method overriding.
 
-### Benefits of Method Overriding
+&nbsp;
+### Benefits of Method Overriding :
 
 1. __Runtime Polymorphism__ : Allows a class to define specific behavior that will be used when an object of that class is used through a reference of the superclass type.
 
 2. __Code Reusability__ : Enables the reuse of existing methods with specific implementations for subclasses without changing the parent class.
 
 3. __Flexibility__ : Provides flexibility to add or change behaviors of methods in subclasses, making the code easier to extend and maintain.
+
+&nbsp;
+## __6. Dynamic Method Dispatch.__
