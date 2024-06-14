@@ -1,8 +1,7 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
 &nbsp;
 
-# $\textcolor{#55ffe1}{Inheritance}$ : _The Code Legacy Continues..._
-
+# __Inheritance__ : _The Code Legacy Continues..._
 
  __Like inheriting your parent's code, but without the family drama!__
 
@@ -16,7 +15,7 @@
 
 &nbsp;
 
-## $\textcolor{#55ffe1}{1. Generalization\ vs\ Specialization}$
+## __1. Generalization VS specialization__
 
 ### __A . Generalization__
 
@@ -750,6 +749,3 @@ public class Main {
 &nbsp;
 
 <img src="../src/dynamicmethoddispatch.png" alt="Image Alt Text" width="500" >
-
-
-## $\textcolor{#55ffe1}{This\ is\ a\ Big\ Title}$
