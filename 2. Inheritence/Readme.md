@@ -751,4 +751,4 @@ public class Main {
 <img src="../src/dynamicmethoddispatch.png" alt="Image Alt Text" width="500" >
 
 
-## $$\textcolor{#3eb}{This\ is\ a\ Big\ Title}$$
+## $$\textcolor{#55ffe1}{This\ is\ a\ Big\ Title}$$
