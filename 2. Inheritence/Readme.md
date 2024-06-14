@@ -364,7 +364,8 @@ y = 20
 ```
 
 ## __4. `this`  v/s  `super` Keyword__
-The this and super keywords in Java are both used to refer to objects within the class hierarchy, but they serve different purposes and are used in different contexts. Here’s a detailed comparison along with examples to illustrate their usage:
+
+The __`this`__ and __`super`__ keywords in Java are both used to refer to objects within the class hierarchy, but they serve different purposes and are used in different contexts. Here’s a detailed comparison along with examples to illustrate their usage:
 
 ### __A. `this` Keyword :__
 
@@ -375,18 +376,32 @@ The this and super keywords in Java are both used to refer to objects within the
     - Used to __resolve naming conflicts__ between instance variables and parameters.
     - Can be used to __call other constructors__ in the same class.
 
-
 - __Use Cases__ :
      1. Accessing instance variables and methods.
+
      2. Calling another constructor from a constructor _(constructor chaining)_.
 
+&nbsp;
+### __B. `super` Keyword :__
 
-${\color{red}Red}$
+- __Context__ : In the context of a subclass.
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
+- __Purpose__ : 
+    - Refers to the superclass (parent class) object instance.
+    - Used to access __superclass methods and constructors__.
+    - Used to call a method from the superclass that has been overridden in the subclass.
+
+- __Use Cases__ :
+     1. Accessing superclass methods and variables.
+     
+     2. Calling a constructor of the superclass from a subclass constructor.
+
+&nbsp;
+
+|Sr.  | Feature | 	`this` Keyword | `super` Keyword   |
+| -------- | -------- | -------- |----------|
+| 1  | Context |Within the same class|  In the context of a subclass|
+| 2  | Refers to  | Current object instance | Superclass (parent class) object instance |
+| 3  | Used for | Accessing instance variables and methods| Accessing superclass methods and constructors|
+| 4  | Constructor Chaining | Calls another constructor in the same class| Calls a constructor of the superclass |
+| 5  |Method Invocation  | Invokes methods of the current class| Invokes methods of the superclass|
