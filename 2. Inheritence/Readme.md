@@ -407,8 +407,5 @@ The __`this`__ and __`super`__ keywords in Java are both used to refer to object
 | 4  | Constructor Chaining | Calls another constructor in the same class| Calls a constructor of the superclass |
 | 5  |Method Invocation  | Invokes methods of the current class| Invokes methods of the superclass|
 
-<pre style="background-color: black ; padding: 10px;">
-Constructor of Class A
-Constructor of Class B
-Constructor of Class C
-</pre>
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
