@@ -1,6 +1,5 @@
 
-
-class Rectangle
+class rectangle_
 {
     private double length;
     private double breadth;
@@ -50,10 +49,7 @@ class Rectangle
     
     public boolean isSquare()
     {
-        if(length==breadth)
-            return true;
-        else 
-            return false;
+        return length == breadth;
     }
 }
         
@@ -61,7 +57,7 @@ class Rectangle
 public class C_data_hiding {
 
     public static void main(String[] args) {
-        Rectangle r=new Rectangle();
+        rectangle_ r = new rectangle_();
         r.setLength(10.5);//check with negative values.
         r.setBreadth(5.5);
         

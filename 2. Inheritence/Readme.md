@@ -57,7 +57,7 @@ features of existing concrete class and adding new features to it.__
 
 Inheritance allows one class (the subclass or derived class) __to inherit__ `attributes` and `methods` from another class (the superclass or base class).
 
-## Example
+### __Example :__
 
 <img src="../src/whatisinheritance.png" alt="Image Alt Text" width="350" >
 
@@ -131,7 +131,11 @@ __2. ___Cylinder___ (Subclass)__ :
     }
 ```
 
+&nbsp;
+
 ## __3. Constructors in Inheritance__
+
+### __A. Order of Constructors :__
 
 - Constructors are the __methods__ of class which are automatically called when an object is created.
 
@@ -139,7 +143,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
 - To make the child class object Firstly the parent class constructor must be created.
 
-## Example
+### __Example :__ [Try it Here](A_Constructors_In_Inheritance.java)
 
                         +---------------------+
                         |     Class Parent    |
@@ -158,7 +162,7 @@ __2. ___Cylinder___ (Subclass)__ :
                         |   Constructor()     |
                         +---------------------+
 
-### Explanation
+### Explanation :
 - There are Three classes `Parent`, `Child` & `GrandChild`.
 - __Parent__ is inherited by __Child__ & __Child__ is inherited by __GrandChild__.
 - `Parent <- Child` & `Child <- GrandChild`.
@@ -168,7 +172,7 @@ __2. ___Cylinder___ (Subclass)__ :
     2. Constructor of `child`
     3. Constructor of `GrandChild`
 
-### Code 
+### Code :
 
 ```
     class Parent
@@ -201,15 +205,188 @@ public class Constructors_In_Inheritance
 
     public static void main(String[] args) 
     {
-        GrandChild GC = new GrandChild();        
+        Parent p = new Parent();            // Only Parent
+        Child c = new Child();              // Parent + Child
+        GrandChild GC = new GrandChild();   // Parent + Child + GrandChild      
     }
     
 }
 ```
+
 ### Output of Code :
 
 ```
 Parent Constructor
+
+Parent Constructor
+Child Constructor
+
+Parent Constructor
 Child Constructor
 Grand Child Constructor
+```
+&nbsp;
+
+### __B. Calling Parameterized Constructors :__ `super()`
+
+- In above example, the constructors of Super Class which are called by Default are `Non-Parameterized Constructor or Default Constructor`.
+
+- But if we want to __Call Parameterized Constructor for Super Class__ while creating object of Sub class, we use `super` keyword to address respective Super class of current constructor class. 
+
+- `super` : Nickname of super-class constructor in sub-class constructor.
+
+### __Example__ : [Try it Here](B_Parameterized_constructors.java)
+
+```
+
+class Parent
+{
+    int x;
+
+    Parent()
+    {
+        System.out.println("Non-Parameterized Constructor of parent");
+        System.out.println("x = " + x);
+    }
+    Parent(int x)
+    {
+        this.x = x;
+        System.out.println("Parameterized Constructor of parent ");
+        System.out.println("x = " + x);
+    }
+}
+
+
+class Child extends Parent
+{
+    int y;
+
+    Child()
+    {
+        System.out.println("Non-Parameterized Constructor of child");
+        System.out.println("y = " + y);
+    }
+
+    Child(int y)
+    {
+        this.y = y;
+        System.out.println("Parameterized Constructor of child");
+        System.out.println("y = " + y);
+    }
+
+    Child(int x,int y)
+    {
+        super(x);  // Here we called parameterized constructor of super class
+        
+        System.out.println("Parameterized Constructor of child");
+        System.out.println("y = " + y);
+    }
+}
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("\n 1. Both are Non-parameterized");
+        Child c1=new Child();
+
+        System.out.println("\n 2. Child is parameterized but parent is Non-parameterized");
+        Child c2=new Child(20);
+
+        System.out.println("\n 3. Both are Parameterized");
+        Child c3=new Child(10,20);
+    }
+
+}
+```
+### Output of Code : 
+
+```
+1. Both are Non-parameterized
+Non-Parameterized Constructor of parent
+x = 0
+Non-Parameterized Constructor of child
+y = 0
+
+2. Child is parameterized but parent is Non-parameterized
+Non-Parameterized Constructor of parent
+x = 0
+Parameterized Constructor of child
+y = 20
+
+3. Both are Parameterized
+Parameterized Constructor of parent 
+x = 10
+Parameterized Constructor of child
+y = 20
+```
+
+### Explanation :
+```
+            +-----------------------------+
+            |    Superclass: Parent       |
+            +-----------------------------+
+            |          X : int            |
+            +-----------------------------+
+            | + Parent()                  | <-- Default Constructor or Non-Parameterized Constructor
+            | + Parent(X : int)           | <-- Parameterized Constructor
+            +-----------------------------+
+                           |
+                           |
+            +-----------------------------+
+            |     Subclass: child         |
+            +-----------------------------+
+            |         Y : int             |
+            +-----------------------------+
+            | + child()                   | <-- Default Constructor or Non-Parameterized Constructor
+            | + child (Y : int)           | <-- Parameterized Constructor 
+            | + child (X : int, Y : int)  | <-- Parameterized Constructor
+            +-----------------------------+
+                           |
+                           |
+                           V
+            +-----------------------------+
+            | Sequence of Calls           |
+            +-----------------------------+
+            | child ()                    |  
+            |  -> super()                 | <-- Calls Parent()
+            |  -> Initialize Y            |
+            +-----------------------------+
+            | child (Y : int)             |
+            |  -> super()                 | <-- Calls Parent()
+            |  -> Initialize Y            |
+            +-----------------------------+
+            | child (X : int, Y : int)    |  
+            |  -> super(X : int)          | <-- Calls Parent(X : int)
+            |  -> Initialize Y            |
+            +-----------------------------+
+```
+
+## __4. `this`  v/s  `super` Keyword__
+The this and super keywords in Java are both used to refer to objects within the class hierarchy, but they serve different purposes and are used in different contexts. Here’s a detailed comparison along with examples to illustrate their usage:
+
+### __A. `this` Keyword :__
+
+- __Context__ : Within the same class.
+
+- __Purpose__ : 
+    - Refers to the current object instance.
+    - Used to __resolve naming conflicts__ between instance variables and parameters.
+    - Can be used to __call other constructors__ in the same class.
+
+
+- __Use Cases__ :
+     1. Accessing instance variables and methods.
+     2. Calling another constructor from a constructor _(constructor chaining)_.
+
+
+${\color{red}Red}$
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
 ```

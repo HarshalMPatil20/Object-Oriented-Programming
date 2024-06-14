@@ -454,13 +454,16 @@ Properties are typically represented as instance variables (fields) within a cla
 
 ### A . `Default` Constructor
 
-- Java provide a default constructor `if no constructors are explicitly defined` in the class. The default constructor `initializes attributes to default values` (e.g., 0 for numeric types, null for references).
+- Java provide a default constructor `if no constructors are explicitly defined` in the class. The default constructor `initializes attributes to default values` 
 
-- `Default constructor can be explicitly declared`, according to desired default values.
+- __Default constructors cannot co-exist with other constructors__
+- In Java, the default values are _0_ for numeric types, __false__ for boolean, and __null__ for object references.
+
+- `Default constructor can be explicitly declared`, according to desired default values and this also called as `Non-parameterized constructor`
 
 &nbsp;
 
-### Implicit Constructor (`Automatically created` & called)
+### __Default Constructor__ : Implicit Constructor (`Automatically created` & called)
 
 ```
     public class Rectangle {
@@ -479,7 +482,7 @@ Properties are typically represented as instance variables (fields) within a cla
 
 
 
-### Explicit Constructor (`Manually created` & called)
+### __Non-parameterized Constructor__ : Explicit Constructor (`Manually created` & called)
 
 ```
 public class Rectangle {
@@ -487,7 +490,7 @@ public class Rectangle {
             private int length;
             private int width;
 
-            // Default constructor
+            // Non-parameterized Constructor
             
             public Rectangle() {
                 length = 5;
@@ -527,7 +530,7 @@ public class Rectangle {
                 this.width = width;
             }
 
-    public static void main(String[] args) {
+public static void main(String[] args) {
 
             Rectangle rect = new Rectangle(10, 5); // Calls the parameterized constructor
 
