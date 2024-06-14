@@ -456,16 +456,14 @@ Properties are typically represented as instance variables (fields) within a cla
 
 - Java provide a default constructor `if no constructors are explicitly defined` in the class. The default constructor `initializes attributes to default values` 
 
-- __Default constructors cannot co-exist with other constructors__
 - In Java, the default values are _0_ for numeric types, __false__ for boolean, and __null__ for object references.
 
 - `Default constructor can be explicitly declared`, according to desired default values and this also called as `Non-parameterized constructor`
 
 &nbsp;
 
-> [!NOTE]
-> Default Constructors are overshadowed by any Constructor and cannot be called by default, rather we have to use other constructors.
-
+> [!CAUTION]
+> Default constructors cannot co-exist with other constructors, if any other constructor is declared then default constructor is not accessible. 
 &nbsp;
 
 ### __Default Constructor__ : Implicit Constructor (`Automatically created` & called)
