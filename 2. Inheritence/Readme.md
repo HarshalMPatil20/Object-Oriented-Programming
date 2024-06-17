@@ -753,4 +753,27 @@ public class Main {
 &nbsp;
 
 > [!CAUTION]
-> `Sub-class reference` and `Super-class object` is not allowed in Dynamic method dispatch. 
+> `Sub-class reference` to `Super-class object` is not allowed in Dynamic method dispatch. 
+
+ ``` cs
+- Correct Usage:
++----------------------+          +----------------------+
+|        Animal        |          |          Dog         |
+|----------------------|          |----------------------|
+| - makeSound()        |          | - makeSound()        |
+|                      |          |                      |
++----------------------+          +----------------------+
+
+    Animal myAnimal = new Dog();   // Superclass reference to subclass object
+    myAnimal.makeSound();          // Dynamic method dispatch occurs
+
+- Incorrect Usage:
++----------------------+          +----------------------+
+|        Animal        |          |          Dog         |
+|----------------------|          |----------------------|
+| - makeSound()        |          | - makeSound()        |
+|                      |          |                      |
++----------------------+          +----------------------+
+
+    Dog myDog = new Animal();      // Compilation error: Subclass reference to superclass object
+``` 
