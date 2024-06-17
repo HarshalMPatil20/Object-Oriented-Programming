@@ -752,6 +752,7 @@ public class Main {
 &nbsp;
 
 > [!CAUTION]
+<<<<<<< HEAD
 > `Sub-class reference` to `Super-class object` is not allowed in Dynamic method dispatch. 
 
  ``` cs
@@ -776,3 +777,6 @@ public class Main {
 
     Dog myDog = new Animal();      // Compilation error: Subclass reference to superclass object
 ``` 
+=======
+> `Sub-class reference` and `Super-class object` is not allowed in Dynamic method dispatch. 
+>>>>>>> parent of 93dcb0f (update)

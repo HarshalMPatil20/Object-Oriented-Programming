@@ -61,8 +61,6 @@ git clone https://github.com/HarshalMPatil20/Object-Oriented-Programming
          - Inheritance
          - Polymorphism
 
-textcolor44aafctext2-class-vs-object 
-
    2. Class Vs Object [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#textcolor44aafctext2-class-vs-object)
 
    3. How to Write Classes [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#3-how-to-write-classes)
