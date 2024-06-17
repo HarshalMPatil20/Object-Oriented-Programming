@@ -1,7 +1,7 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
 &nbsp;
 
-# __Inheritance__ : _The Code Legacy Continues..._
+# $\textcolor{#44aafc}{Inheritance}$ : _The Code Legacy Continues..._
 
  __Like inheriting your parent's code, but without the family drama!__
 
@@ -15,7 +15,7 @@
 
 &nbsp;
 
-## __1. Generalization VS specialization__
+## $\textcolor{#44aafc}{\text{1. Generalization vs Specialization}}$  
 
 ### __A . Generalization__
 
@@ -54,7 +54,7 @@ features of existing concrete class and adding new features to it.__
 
     <img src="../src/spe.png" alt="Image Alt Text" width="750" >
 
-## __2. What is Inheritance__
+## $\textcolor{#44aafc}{\text{2. What is Inheritance}}$  
 
 Inheritance allows one class (the subclass or derived class) __to inherit__ `attributes` and `methods` from another class (the superclass or base class).
 
@@ -134,8 +134,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
 &nbsp;
 
-## __3. Constructors in Inheritance__
-
+## $\textcolor{#44aafc}{\text{3. Constructors in Inheritance}}$ 
 ### __A. Order of Constructors :__
 
 - Constructors are the __methods__ of class which are automatically called when an object is created.
@@ -146,7 +145,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
 ### __Example :__ [Try it Here](A_Constructors_In_Inheritance.java)
 
-```sql
+```cs
 
                         +---------------------+
                         |     Class Parent    |
@@ -374,7 +373,7 @@ y = 20
 
 &nbsp;
 
-## __4. `this`  v/s  `super` Keyword__
+## $\textcolor{#44aafc}{\text{4. {\color{#FFFF00}this} v/s {\color{#FFFF00}super} Keyword }}$
 
 The __`this`__ and __`super`__ keywords in Java are both used to refer to objects within the class hierarchy, but they serve different purposes and are used in different contexts. Here’s a detailed comparison along with examples to illustrate their usage:
 
@@ -511,12 +510,11 @@ public class Cylinder extends Circle {
     }
 }
 ```
-
 &nbsp;
 > [!NOTE]  
 > You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
 
-#### Example
+#### $\textcolor{#44aafc}{\text{Example : }}$
 
 ```java
 class Circle
@@ -546,7 +544,7 @@ public class Main {
 }
 ```
 
-#### Output
+#### $\textcolor{#44aafc}{\text{Output : }}$
 
 ```
 2.5
@@ -558,7 +556,7 @@ public class Main {
 > [!NOTE]  
 > If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class
 
-#### Example
+#### $\textcolor{#44aafc}{\text{Example : }}$
 
 ``` java
 class Parent
@@ -590,7 +588,7 @@ public class main
 }
 ```
 
-#### Output
+#### $\textcolor{#44aafc}{\text{Output : }}$
 
 ```
 Variable from Parent
@@ -599,7 +597,8 @@ Variable from Child
 
 &nbsp;
 
-## __5. Method Overriding__
+## $\textcolor{#44aafc}{\text{5. Method Overriding}}$  
+
 
 - Method overriding is a feature that allows a subclass (child class) to provide a specific implementation of a method that is already defined in its superclass (parent class).
 - The purpose of overriding is to allow the subclass to modify or extend the behavior of the method as defined in the parent class.
@@ -692,7 +691,7 @@ public class C_method_overriding {
 
 &nbsp;
 
-## __6. Dynamic Method Dispatch.__
+## $\textcolor{#44aafc}{\text{6. Dynamic Method Dispatch.}}$  
 
 - Dynamic method dispatch allows the selection of the appropriate method implementation at runtime, based on the actual type of the object.
 
