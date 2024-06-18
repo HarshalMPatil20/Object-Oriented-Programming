@@ -2,11 +2,11 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
 &nbsp;
 
-# $\textcolor{#44aafc}{\text{Basics of Object-Oriented Programming (OOP)}}$
+# ___Basics of Object-Oriented Programming (OOP)___
 
 &nbsp;
 
-## $\textcolor{#44aafc}{\text{1. Introduction to Object-Oriented Programming (OOP)}}$ 
+## ___1. Introduction to Object-Oriented Programming (OOP)___ 
 
 
 Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which are instances of classes. It focuses on the concepts of abstraction, encapsulation, inheritance, and polymorphism.
@@ -91,7 +91,7 @@ Example: Consider a Shape superclass with a method called calculateArea(). We ca
 &nbsp;
 
 
-## $\textcolor{#44aafc}{\text{2. Class Vs Object}}$
+## ___2. Class Vs Object___
 
 
 <img src="../src/classvsobject.webp" alt="Image Alt Text" width="750" >
@@ -144,7 +144,7 @@ method area which contains all the methods.
 [&nbsp; > Back to main](../Readme.md#roadmap)
 
 &nbsp;
-## $\textcolor{#44aafc}{\text{3. How to Write Classes}}$
+## ___3. How to Write Classes___
 
 ## A. Circle
 
@@ -340,7 +340,7 @@ public class default_tostring {
 [&nbsp; >  Back to main](../Readme.md#roadmap)
 
 &nbsp;
-## $\textcolor{#44aafc}{\text{4. Data Hiding}}$ 
+## ___4. Data Hiding___ 
 
 - Data hiding is a concept in object-oriented programming (OOP) that refers to the practice of `hiding the internal state (data)` of an object and requiring all interactions with the object to be performed `through its public interface.`
 
@@ -395,7 +395,7 @@ class Rectangle
 [&nbsp; >  Back to main](../Readme.md#roadmap)
 
 &nbsp;
-## $\textcolor{#44aafc}{\text{5. Types of Properties}}$ 
+## ___5. Types of Properties___
 
 Properties are typically represented as instance variables (fields) within a class, and their readability and writability `are controlled using access modifiers (private, protected, public) along with getter and setter methods.`
 
@@ -435,7 +435,7 @@ Properties are typically represented as instance variables (fields) within a cla
 
 &nbsp;
 
-## $\textcolor{#44aafc}{\text{6. Constructors}}$ 
+## ___6. Constructors___ 
  
 
 - Constructors are used to `initialize the state of objects by providing initial values` to their attributes (fields) when they are created.
@@ -464,7 +464,7 @@ Properties are typically represented as instance variables (fields) within a cla
 
 &nbsp;
 
-## $\textcolor{#44aafc}{\text{7. Types of Constructors}}$
+## ___7. Types of Constructors___
 
 ### A . `Default` Constructor
 
@@ -617,7 +617,7 @@ public static void main(String[] args) {
 > [!IMPORTANT]
 > Default constructors cannot co-exist with other constructors, if any other constructor is declared then default constructor is not accessible. you have to compulsorily use other constructors.
 
-$\textcolor{#AD7FFB}{\text{Example : }}$
+Example : 
 
 ``` java
 class Circle
@@ -651,7 +651,7 @@ class Cylinder extends Circle
 
 &nbsp;
 
-## $\textcolor{#44aafc}{\text{8. Array of Objects}}$ 
+## ___8. Array of Objects___
 
 - Creating an array of objects involves initializing an array where each element is an instance of a particular class.
 
