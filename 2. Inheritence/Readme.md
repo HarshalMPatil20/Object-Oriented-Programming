@@ -1,10 +1,9 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
 &nbsp;
 
-$${\color{blue}Blue}$$
 # __Inheritance__ : _The Code Legacy Continues..._
 
- __Like inheriting your parent's code, but without the family drama!__
+ ___Like inheriting your parent's code, but without the family drama!___
 
 ### _Why Inheritance_ ?
 
@@ -701,7 +700,7 @@ public class C_method_overriding {
 - When a `super class reference holding the object of sub class` and overridden method is called then method of object will be called it is ___Dynamic Method Dispatch___.
 
 ### __Example__ : [Try it Here](D_Dynamic_method_dispatch.java)
-Let's illustrate dynamic method dispatch with a Java example involving superclass `Animal` and subclass `Dog` :
+_Let's illustrate dynamic method dispatch with a Java example involving superclass `Animal` and subclass `Dog`_ :
 
 ```java
 // Superclass
