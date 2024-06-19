@@ -512,7 +512,7 @@ public class Cylinder extends Circle {
 ```
 &nbsp;
 > [!NOTE]  
-> 1. You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
+> 1. __You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.__
 >
 >___Example :___
 >
@@ -553,7 +553,7 @@ public class Cylinder extends Circle {
 >&nbsp;
 > 
 >
-> 2. If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class
+> 2. __If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class__
 >
 > ___Example :___
 >
