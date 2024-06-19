@@ -508,92 +508,94 @@ public class Cylinder extends Circle {
         double Area = super.area();   // calls area method from circle 
         return Area * height;
     }
-}
+
 ```
 &nbsp;
-> [!NOTE]  
+
+>[!NOTE]
+>
 > 1. __You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.__
 >
->___Example :___
->
->   ``` java
->class Circle
->{
->    double radius ;
->}
->
->class Cylinder extends Circle
->{
->    double height;
->
->    Cylinder(double radius, double height)
->
->    {
->        this.radius = radius;  // variable from super class
->        this.height = height;
->    }
->}
->
->public class Main {
->    public static void main(String[] args) {
->
->        Cylinder c = new Cylinder(2.5, 5.0);
->        System.out.println(c.radius);
->        System.out.println(c.height);
->    }
->}
->```
->
->___Output :___ 
->
->```
->2.5
->5.0
->```
->&nbsp;
-> 
+> ___Example :___
+
+   ``` java
+class Circle
+{
+    double radius ;
+}
+
+class Cylinder extends Circle
+{
+    double height;
+
+    Cylinder(double radius, double height)
+
+    {
+        this.radius = radius;  // variable from super class
+        this.height = height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Cylinder c = new Cylinder(2.5, 5.0);
+        System.out.println(c.radius);
+        System.out.println(c.height);
+    }
+}
+```
+
+___Output :___ 
+
+```
+2.5
+5.0
+```
+&nbsp;
+ 
+>[!NOTE]
 >
 > 2. __If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class__
 >
 > ___Example :___
->
->``` java
->class Parent
->{
->    String Variable = "Variable from Parent"; // Same name >variable
->   
->}
->
->class Child extends Parent
->{
->    String Variable = "Variable from Child"; // Same name variable
->    
->    void display()
->    {
->        System.out.println(super.Variable); // Variable from super class
->        System.out.println(Variable); // Variable from current class
->        // or System.out.println(this.Variable);
->    }
->}
->
->
->public class main 
->{
->    public static void main(String[] args) 
->    {
->           Child c = new Child();
->           c.display();
->    }   
->}
->```
->
->___Output :___
->
->```
->Variable from Parent
->Variable from Child
->```
 
+``` java
+class Parent
+{
+    String Variable = "Variable from Parent"; // Same name >variable
+   
+}
+
+class Child extends Parent
+{
+    String Variable = "Variable from Child"; // Same name variable
+    
+    void display()
+    {
+        System.out.println(super.Variable); // Variable from super class
+        System.out.println(Variable); // Variable from current class
+        // or System.out.println(this.Variable);
+    }
+}
+
+
+public class main 
+{
+    public static void main(String[] args) 
+    {
+           Child c = new Child();
+           c.display();
+    }   
+}
+```
+
+___Output :___
+
+```
+Variable from Parent
+Variable from Child
+```
 &nbsp;
 
 ## ___5. Method Overriding___ 
