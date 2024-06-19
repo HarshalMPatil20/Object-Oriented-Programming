@@ -546,7 +546,7 @@ public class Main {
 }
 ```
 
-___Output :___ 
+>___Output :___ 
 
 ```
 2.5
@@ -590,7 +590,7 @@ public class main
 }
 ```
 
-___Output :___
+> ___Output :___
 
 ```
 Variable from Parent
