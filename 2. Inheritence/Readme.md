@@ -15,7 +15,7 @@
 
 &nbsp;
 
-## __1. Generalization vs Specialization__ 
+## ___1. Generalization vs Specialization___ 
 
 ### __A . Generalization__
 
@@ -54,7 +54,7 @@ features of existing concrete class and adding new features to it.__
 
     <img src="../src/spe.png" alt="Image Alt Text" width="750" >
 
-## __2. What is Inheritance__  
+## ___2. What is Inheritance___  
 
 Inheritance allows one class (the subclass or derived class) __to inherit__ `attributes` and `methods` from another class (the superclass or base class).
 
@@ -134,7 +134,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
 &nbsp;
 
-## __3. Constructors in Inheritance__
+## ___3. Constructors in Inheritance___
 ### __A. Order of Constructors :__
 
 - Constructors are the __methods__ of class which are automatically called when an object is created.
@@ -373,7 +373,7 @@ y = 20
 
 &nbsp;
 
-## __4. `this` v/s `super` Keyword__ 
+## ___4. `this` v/s `super` Keyword___ 
 
 The __`this`__ and __`super`__ keywords in Java are both used to refer to objects within the class hierarchy, but they serve different purposes and are used in different contexts. Here’s a detailed comparison along with examples to illustrate their usage:
 
@@ -512,92 +512,91 @@ public class Cylinder extends Circle {
 ```
 &nbsp;
 > [!NOTE]  
-> You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
-
-#### Example :
-
-```java
-class Circle
-{
-    double radius ;
-}
-
-class Cylinder extends Circle
-{
-    double height;
-
-    Cylinder(double radius, double height)
-
-    {
-        this.radius = radius;  // variable from super class
-        this.height = height;
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-
-        Cylinder c = new Cylinder(2.5, 5.0);
-        System.out.println(c.radius);
-        System.out.println(c.height);
-    }
-}
-```
-
-#### Output : 
-
-```
-2.5
-5.0
-```
+> 1. You can also access Variables of inherited class with `this` keyword as after inheritance all properties of super-class are also part of properties of Sub-class.
+>
+>___Example :___
+>
+>```java
+>class Circle
+>{
+>    double radius ;
+>}
+>
+>class Cylinder extends Circle
+>{
+>    double height;
+>
+>    Cylinder(double radius, double height)
+>
+>    {
+>        this.radius = radius;  // variable from super class
+>        this.height = height;
+>    }
+>}
+>
+>public class Main {
+>    public static void main(String[] args) {
+>
+>        Cylinder c = new Cylinder(2.5, 5.0);
+>        System.out.println(c.radius);
+>        System.out.println(c.height);
+>    }
+>}
+>```
+>
+>___Output :___ 
+>
+>```
+>2.5
+>5.0
+>```
+>&nbsp;
+> 
+>
+> 2. If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class
+>
+> ___Example :___
+>
+>``` java
+>class Parent
+>{
+>    String Variable = "Variable from Parent"; // Same name >variable
+>   
+>}
+>
+>class Child extends Parent
+>{
+>    String Variable = "Variable from Child"; // Same name variable
+>    
+>    void display()
+>    {
+>        System.out.println(super.Variable); // Variable from super class
+>        System.out.println(Variable); // Variable from current class
+>        // or System.out.println(this.Variable);
+>    }
+>}
+>
+>
+>public class main 
+>{
+>    public static void main(String[] args) 
+>    {
+>           Child c = new Child();
+>           c.display();
+>    }   
+>}
+>```
+>
+>___Output :___
+>
+>```
+>Variable from Parent
+>Variable from Child
+>```
 
 &nbsp;
 
-> [!NOTE]  
-> If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class
-
-#### Example :
-
-``` java
-class Parent
-{
-    String Variable = "Variable from Parent"; // Same name variable
-   
-}
-
-class Child extends Parent
-{
-    String Variable = "Variable from Child"; // Same name variable
-    
-    void display()
-    {
-        System.out.println(super.Variable); // Variable from super class
-        System.out.println(Variable); // Variable from current class
-        // or System.out.println(this.Variable);
-    }
-}
-
-
-public class main 
-{
-    public static void main(String[] args) 
-    {
-           Child c = new Child();
-           c.display();
-    }   
-}
-```
-
-#### Output :
-
-```
-Variable from Parent
-Variable from Child
-```
-
-&nbsp;
-
-## 5. Method Overriding 
+## ___5. Method Overriding___ 
 
 
 - Method overriding is a feature that allows a subclass (child class) to provide a specific implementation of a method that is already defined in its superclass (parent class).
@@ -618,10 +617,8 @@ __2. @Override Annotation :__ While not mandatory, it’s a good practice to use
 
 __3. Access Modifiers :__ The overriding method `cannot have a more restrictive access modifier than the method being overridden` (e.g., you cannot override a `public` method with a `protected` method).
 
-> [!CAUTION]
->
-> 1. __Final__ and __static__ methods cannot be overridden.
-> 2. Method can be overridden with same or lenient (public, protected) access specifiers but the __stricter(private) access specifiers cannot be used in sub class__.
+
+
 
 ### __Example__ : [Try it Here](C_Method_overriding.java)
 
@@ -691,7 +688,34 @@ public class C_method_overriding {
 
 &nbsp;
 
-## 6. Dynamic Method Dispatch.  
+> [!NOTE]
+>
+> 1. Java is ___`Case-Sensitive`___
+>
+> Example :
+> ```java
+>
+> ```
+
+> [!CAUTION]
+>
+> 2. __`Final`__ and __`static`__ methods ___cannot be overridden___.
+
+> [!NOTE]
+>
+> 3. Method can be overridden with same or lenient (public, protected) access specifiers but the __stricter(private) access specifiers cannot be used in sub class__.
+
+> [!CAUTION]
+>
+> 4. Method with ___`same name must have same return type`___ in any version of its overriding or overloading.
+
+> [!NOTE]
+>
+> 5. ___Only in one situation it can have different return type___, `while returning the object of the same class`
+
+&nbsp;
+
+## ___6. Dynamic Method Dispatch___  
 
 - Dynamic method dispatch allows the selection of the appropriate method implementation at runtime, based on the actual type of the object.
 
