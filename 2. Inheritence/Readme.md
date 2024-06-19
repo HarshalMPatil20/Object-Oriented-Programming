@@ -726,12 +726,23 @@ class Sub extends Super {
 > 3. Method can be overridden with same or lenient (public, protected) access specifiers but the __stricter(private) access specifiers cannot be used in sub class__.
 >#### ___Access Levels for Method Overriding:___
 >
->| Superclass Method | Subclass Overridden Method          |
->|-------------------|-------------------------------------|
->| `private`         | ___Cannot be overridden (as cannot inherited)___|
->| `default`         | `default`, `protected`, `public`    |
->| `protected`       | `protected`, `public`               |
->| `public`          | `public`                            |
+>   | Superclass Method | Subclass Overridden Method                      |  
+>   |-------------------|-------------------------------------------------|  
+>   | `private`         | ___Cannot be overridden (as cannot inherited)___|  
+>   | `default`         | `default`, `protected`, `public`                |  
+>   | `protected`       | `protected`, `public`                           |  
+>   | `public`          | `public`                                        |  
+>
+>#### ___Summary of Differences___
+>
+>| Feature                | Private                    | Default                     | Protected                  | Public                     |
+>|------------------------|----------------------------|-----------------------------|----------------------------|----------------------------|
+>| **Keyword**            | `private`                  | None (implicit)             | `protected`                | `public`                   |
+>| **Scope**              | Class-level                | Package-private             | Package + Subclasses       | Global                     |
+>| **Accessibility**      | Within the same class      | Within the same package     | Within the same package and subclasses | From any class in any package |
+>| **Use Case**           | Encapsulation (hide details) | Restrict access to within the same package | Allow access within the package and subclasses | Allow access from any class, anywhere |
+>
+
 
 
 > [!CAUTION]
