@@ -559,7 +559,7 @@ public class Main {
 > 2. __If Super class and sub class have a variable with same name then to access the specific variable from super-class , `super` is used otherwise it will refer to variable in sub-class__
 >
 > ___Example :___
-
+>
 ``` java
 class Parent
 {
@@ -589,7 +589,7 @@ public class main
     }   
 }
 ```
-
+>
 > ___Output :___
 
 ```
@@ -695,9 +695,27 @@ public class C_method_overriding {
 > 1. Java is ___`Case-Sensitive`___
 >
 > Example :
-> ```java
->
-> ```
+
+```java
+class Super {
+
+    public String display() { 
+        return "display"
+    } 
+}
+
+class Sub extends Super {
+
+    public String Display() { // this "Display" method is neither overridden or Overloaded 
+                              // Because both are different in name signature.
+                              // "display" != "Display"  
+        return "Display"
+    }
+}
+```
+
+&nbsp;
+
 
 > [!CAUTION]
 >
@@ -706,14 +724,69 @@ public class C_method_overriding {
 > [!NOTE]
 >
 > 3. Method can be overridden with same or lenient (public, protected) access specifiers but the __stricter(private) access specifiers cannot be used in sub class__.
+>#### ___Access Levels for Method Overriding:___
+>
+>| Superclass Method | Subclass Overridden Method          |
+>|-------------------|-------------------------------------|
+>| `private`         | ___Cannot be overridden (as cannot inherited)___|
+>| `default`         | `default`, `protected`, `public`    |
+>| `protected`       | `protected`, `public`               |
+>| `public`          | `public`                            |
+
 
 > [!CAUTION]
 >
 > 4. Method with ___`same name must have same return type`___ in any version of its overriding or overloading.
+>
+> ___Example :___
+
+```java
+class Super {
+
+    public String display() { 
+        return "display"
+    } 
+}
+
+class Sub extends Super {
+
+    public String display() {  
+        return "Display"
+    }
+}
+```
+>
+>___Explanation :___ `display()` method is once declared to `return String` datatype , `can never be changed` in same class or other inherited class to return any other data type.
+
+&nbsp;
 
 > [!NOTE]
 >
-> 5. ___Only in one situation it can have different return type___, `while returning the object of the same class`
+> 5. ___Only in one situation it can have different return type___, `while returning the object of the same class or its inherited class`
+>
+> ___Example :___
+
+```java
+class A {} 
+class B extends A {}  // A <- B
+
+class Super {
+
+    public A create() {     // return type - A (object of class A)
+        return new A();
+    } 
+}
+
+class Sub extends Super { 
+
+    public B create() {  // return type - B (object of class B)
+                         // Allowed because B is sub class of A
+        return new B();
+    }
+}
+```
+>
+
 
 &nbsp;
 
