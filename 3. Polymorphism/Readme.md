@@ -145,5 +145,5 @@ public class B_Method_Overloading {
 
 ## 2. __Run-Time Polymorphism__
 
-### __A . Method Overriding :__  &nbsp; [Revise >](../2.%20Inheritence/Readme.md#5-method-Overriding)
+### __A . Method Overriding :__  &nbsp; [Revise >](../2.%20Inheritence/Readme.md#5-method-overriding)
  
