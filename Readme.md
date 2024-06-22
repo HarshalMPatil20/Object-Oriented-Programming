@@ -66,7 +66,7 @@ git clone https://github.com/HarshalMPatil20/Object-Oriented-Programming
    3. How to Write Classes [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#3-how-to-write-classes)
 
       - Important : `tostring()` Method [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#important--tostring)
-         - `Overriden`
+         - `Overridden`
          - Default
          
    4. Data Hiding [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#4-data-hiding)
