@@ -147,3 +147,108 @@ public class B_Method_Overloading {
 
 ### __A . Method Overriding :__  &nbsp; [Revise >]( ../2.%20Inheritance/Readme.md#5-method-overriding)
 
+- Runtime polymorphism in Java is achieved through method overriding. 
+- Method overriding occurs when a subclass provides a specific implementation for a method that is already defined in its superclass. 
+- This allows the subclass to modify or extend the behavior of the superclass method.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/methodoverriding.png" alt="Image Alt Text" width="300" >
+
+### __Example__ : [Try it Here](../2.%20Inheritance/C_Method_overriding.java)
+
+```java
+// Superclass
+class Animal {
+
+    // Method to be overridden
+    public void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+
+}
+
+// Subclass
+class Dog extends Animal {
+
+    // Overriding the makeSound() method
+    @Override
+    public void makeSound() {
+        System.out.println("Dog barks");
+    }
+
+}
+
+public class C_method_overriding {
+    public static void main(String[] args) {
+
+        // Creating an instance of Animal
+        Animal myAnimal = new Animal();
+        myAnimal.makeSound();           // Output: Animal makes a sound
+
+        // Creating an instance of Dog
+        Dog myDog = new Dog();
+        myDog.makeSound();              // Output: Dog barks
+    }
+
+}
+
+```
+
+### __B . Dynamic Method Dispatch :__  &nbsp; [Revise >]( ../2.%20Inheritance/Readme.md#6-dynamic-method-dispatch)
+
+- Dynamic method dispatch allows a method call to be resolved to the appropriate overridden method implementation `at runtime based on the actual object` being referenced, `rather than the type of the reference variable.`
+
+- The method to be executed `makeSound` is determined at `runtime` based on the actual object type `Dog` even if referenced as `Animal`.
+
+> [!NOTE]
+> Only those methods are invocable which are `available in Reference`
+
+
+### __Example__ : [Try it Here](D_Dynamic_method_dispatch.java)
+
+
+```java
+// Superclass
+class Animal {
+    public void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+    public void move() {
+        System.out.println("Animal is moving");
+    }
+}
+
+// Subclass - Dog
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Animal myAnimal = new Dog();  // Superclass reference points to a Dog object
+
+        myAnimal.makeSound();  // Output: Dog barks (Dynamic Method Dispatch)
+
+        myAnimal.move(); // Output: Animal is moving (Static Binding)
+    }
+}
+
+```
+&nbsp;
+
+## ___Comparing compile-time polymorphism and runtime polymorphism :___
+
+|                | **Compile-time Polymorphism**                           | **Runtime Polymorphism**                            |
+|-----------------------------|---------------------------------------------------------|----------------------------------------------------|
+| **Definition**              | Polymorphism resolved at compile-time                   | Polymorphism resolved at runtime                   |
+| **Other Name**              | Static Polymorphism                                     | Dynamic Polymorphism                               |
+| **Mechanism**               | Method Overloading                                      | Method Overriding                                  |
+| **Determination**           | The method to be invoked is determined at compile-time  | The method to be invoked is determined at runtime  |
+| **Resolution**              | Resolved by the `compiler`                                | Resolved by the `JVM`                                |
+| **Flexibility**             | `Less flexible`, as decisions are made at compile-time    | `More flexible`, as decisions are made at runtime    |
+| **Use Case**                | Used for static type checking and improving readability | Used for implementing dynamic behavior             |
+| **Performance**             | Generally `faster` due to early binding                   | Generally `slower` due to late binding               |
