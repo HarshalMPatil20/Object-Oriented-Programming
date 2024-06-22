@@ -134,6 +134,33 @@ __2. ___Cylinder___ (Subclass)__ :
 
 &nbsp;
 
+## ___3. Types of Inheritance___
+
+- ###  Single Inheritance : `1 -> 1`
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/single.png" alt="Image Alt Text" width="100" >
+
+    &nbsp;
+
+- ### Multilevel Inheritance : `1 -> 1 -> ...n`
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/multilevel.png" alt="Image Alt Text" width="100" >
+
+    &nbsp;
+- ### Hierarchical Inheritance : `1 -> n -> n...`
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/Hierarchical.png" alt="Image Alt Text" width="300" >
+
+    &nbsp;
+- ### Multiple Inheritance : `n -> 1` _(Through Interfaces)_
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/Multiple.png" alt="Image Alt Text" width="300" >
+
+    &nbsp;
+
+- ### Hybrid Inheritance : `1 -> n... -> 1` 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/hybrid.png" alt="Image Alt Text" width="300" >
+
+
+&nbsp;
 ## ___3. Constructors in Inheritance___
 ### __A. Order of Constructors :__
 
@@ -508,7 +535,7 @@ public class Cylinder extends Circle {
         double Area = super.area();   // calls area method from circle 
         return Area * height;
     }
-
+}
 ```
 &nbsp;
 
@@ -721,19 +748,50 @@ class Sub extends Super {
 >
 > 2. __`Final`__ and __`static`__ methods ___cannot be overridden___.
 
-> [!NOTE]
+&nbsp;
+
+> [!IMPORTANT]
 >
 > 3. Method can be overridden with same or lenient (public, protected) access specifiers but the __stricter(private) access specifiers cannot be used in sub class__.
->#### ___Access Levels for Method Overriding:___
+>- #### ___Access Levels for Method Overriding:___
 >
->   | Superclass Method | Subclass Overridden Method                      |  
+>   | Superclass Method | Subclass Overridden Method  (less stricter)     |  
 >   |-------------------|-------------------------------------------------|  
->   | `private`         | ___Cannot be overridden (as cannot inherited)___|  
->   | `default`         | `default`, `protected`, `public`                |  
->   | `protected`       | `protected`, `public`                           |  
+>   | `private`         | _Cannot be overridden (as cannot inherited)_    |  
+>   | `default`         | `default` / `protected` / `public`              |  
+>   | `protected`       | `protected` / `public`                          |   
 >   | `public`          | `public`                                        |  
 >
->#### ___Summary of Differences___
+> ___Example :___
+
+```java
+class Super {
+
+    protected String display() {  // super - `protected` -> sub - `protected` / `public`
+        return "display"
+    } 
+}
+
+class Sub extends Super {
+
+    // 1. protected allowed
+    protected String display() {  
+        return "Display"
+    }
+
+    // or
+
+    // 2. public allowed
+    public String display() { 
+        return "Display"
+    }
+}
+```
+
+&nbsp;
+
+>[!NOTE]
+>- #### ___Summary of Differences___
 >
 >| Feature                | Private                    | Default                     | Protected                  | Public                     |
 >|------------------------|----------------------------|-----------------------------|----------------------------|----------------------------|
@@ -743,7 +801,7 @@ class Sub extends Super {
 >| **Use Case**           | Encapsulation (hide details) | Restrict access to within the same package | Allow access within the package and subclasses | Allow access from any class, anywhere |
 >
 
-
+&nbsp;
 
 > [!CAUTION]
 >
