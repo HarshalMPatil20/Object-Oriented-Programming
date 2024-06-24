@@ -138,6 +138,8 @@ public class A_Abstract_class {
 
 &nbsp;
 
+---
+
 # __Interfaces__
 
 #### `Abstraction + Polymorphism (Runtime-polymorphism )`
