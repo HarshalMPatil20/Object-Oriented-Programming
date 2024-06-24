@@ -124,7 +124,12 @@ public class A_Abstract_class {
     }
 }
 ```
+_In this example, `Animal` is an abstract class with an abstract method `makeSound()`.
+`Dog` is a concrete class that extends `Animal` and implements the `makeSound()` method.
+The `main` method in `A_Abstract_class` demonstrates how to create an instance of `Dog`
+and call its methods._
 
+&nbsp;
 > [!CAUTION]
 > An Abstract class & An Abstract Method `can neither be final nor static` because if it is made final then it cannot be extended whereas abstract class is `meant for inheritance` & cannot be overridden whereas Abstract method is `meant for overriding`.
 
@@ -197,10 +202,9 @@ class Dog implements Animal {
 ### _# Important about Interfaces :_
 
 1. As methods are to be implemented by the classes, `they can’t be made private.`
-
 &nbsp;
 
-2. Identifiers can be used in interfaces but the identifiers must be given in Upper cases.
+2. Identifiers can be used in interfaces but the identifiers `must be given in Upper cases.`
 
     - Identifiers are by default final and static.
 
@@ -241,7 +245,6 @@ interface Animal {
 &nbsp;
 
 4. Static members can be accessed in main method by using interface name and dot operator.
-
 &nbsp;
 
 5. An interface can be extended from another interface.
@@ -293,7 +296,7 @@ In languages that support multiple inheritance, like C++, a derived class can in
 
 - When two parent classes inherit from a common ancestor, and a derived class inherits from both of these parent classes, it creates a diamond shape in the inheritance diagram. This can cause ambiguity about which ancestor's properties and methods the derived class should inherit.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/diamond.png" alt="Image Alt Text" width="600" >
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/Diamond.png" alt="Image Alt Text" width="600" >
 
 2. __Increased Complexity__ : Managing multiple inheritance can make the code more complex and harder to understand. It can also make debugging and maintenance more difficult.
 
@@ -306,6 +309,8 @@ In languages that support multiple inheritance, like C++, a derived class can in
 
 - By Using Interfaces :
 In Java, a class can implement multiple interfaces. This provides a way to achieve multiple inheritance of method signatures (but not implementations).
+
+&nbsp;
 
 ### __Example__ : [Try it Here](C_Multiple_Inheritance.java)
 
@@ -349,6 +354,8 @@ class Duck implements Animal, Flyable, Swimmable {
 }
 ```
 
+&nbsp;
+
 ### _# Comparison Table :_
 |  **Feature**              | **Multiple Inheritance (C++)**                           | **Java Interfaces**                            |
 |-----------------------------|---------------------------------------------------------|----------------------------------------------------|
@@ -357,4 +364,7 @@ class Duck implements Animal, Flyable, Swimmable {
 | **Complexity**               |Increases complexity |Keeps code simpler and more maintainable|
 | **State Inheritance**              |Inherits both behavior and state | Inherits behavior only (method signatures) |
 | **Constructors**           | Can inherit constructors | No constructors in interfaces  |
-| **Example Language**             | C++   | Java    |
+| **Example Language**      | C++   | Java    |
+
+
+___By using interfaces, Java provides a way to implement multiple behaviors in a class while avoiding the complications associated with multiple inheritance.___
