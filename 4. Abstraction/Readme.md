@@ -138,9 +138,12 @@ public class A_Abstract_class {
 
 &nbsp;
 
----
+&nbsp;
 
-# __Interfaces__
+
+
+
+# __2. Interfaces__
 
 #### `Abstraction + Polymorphism (Runtime-polymorphism )`
 
@@ -259,3 +262,99 @@ public interface Interface_B extends Interface_A {
     Animal d = new Dog();
 ```
 
+&nbsp;
+
+&nbsp;
+
+# __3. Interface vs Abstract class__
+
+|                | **Interface**                           | **Abstract class**                            |
+|-----------------------------|---------------------------------------------------------|----------------------------------------------------|
+| **Abstraction**             | Members of a Java interface are `public` by default. | A Java abstract class can have class members like private, protected, etc.               |
+| **Type of Methods**              | Interface can have `only abstract methods`. Since Java 8, it can have `default and static methods also`.                   |  Abstract class can have abstract and non-abstract methods.      |
+| **Type of Variables**               | Interface has only `static` and `final` variables.   | Abstract class can have final, non-final, static and non-static variables.                                  |
+| **Multiple inheritance.**              | Interface supports multiple inheritance.  | Abstract class doesn't support multiple inheritance.                               |
+| **Implementation**           | Interface `can't provide the implementation of abstract class`.  | Abstract class can `provide the implementation of interface`.  |
+| **Extent**             | An interface can extend another Java interface only.   | An abstract class can extend another Java class and implement multiple Java interfaces.    |
+| **Keyword**                | An interface can be implemented using keyword "`implements`". | An abstract class can be extended using keyword "`extends`".            |
+&nbsp;
+
+&nbsp;
+
+# __4. Interface & Multiple Inheritance__
+
+
+
+### _# Why Multiple inheritance is tricky ?_
+
+In languages that support multiple inheritance, like C++, a derived class can inherit from multiple base classes. However, this can lead to several problems:
+
+1. __Diamond Problem__ : 
+
+- When two parent classes inherit from a common ancestor, and a derived class inherits from both of these parent classes, it creates a diamond shape in the inheritance diagram. This can cause ambiguity about which ancestor's properties and methods the derived class should inherit.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/diamond.png" alt="Image Alt Text" width="600" >
+
+2. __Increased Complexity__ : Managing multiple inheritance can make the code more complex and harder to understand. It can also make debugging and maintenance more difficult.
+
+&nbsp;
+
+### _# How Java Avoids Multiple Inheritance directly ?_
+
+- Java avoids the problems associated with multiple inheritance by not allowing a class to inherit from more than one class. 
+- Instead, Java uses interfaces to achieve similar functionality without the complexities and ambiguities.
+
+- By Using Interfaces :
+In Java, a class can implement multiple interfaces. This provides a way to achieve multiple inheritance of method signatures (but not implementations).
+
+### __Example__ : [Try it Here](C_Multiple_Inheritance.java)
+
+```java
+// Define the Animal interface
+interface Animal {
+    void run();
+}
+
+// Define the Flyable interface
+interface Flyable {
+    void fly();
+}
+
+// Define the Swimmable interface
+interface Swimmable {
+    void swim();
+}
+
+// Define the Duck class that implements all three interfaces
+class Duck implements Animal, Flyable, Swimmable {
+
+    @Override
+    public void run() {
+        System.out.println("Eating...");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Flying...");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Swimming...");
+    }
+
+    public void quack() {
+        System.out.println("Quacking...");
+    }
+}
+```
+
+### _# Comparison Table :_
+|  **Feature**              | **Multiple Inheritance (C++)**                           | **Java Interfaces**                            |
+|-----------------------------|---------------------------------------------------------|----------------------------------------------------|
+| **Inheritance**    | Class can inherit from multiple classes | Class can implement multiple interfaces |
+| **Ambiguity**     | Can cause ambiguity (e.g., Diamond Problem) |No ambiguity, as interfaces only define method signatures|
+| **Complexity**               |Increases complexity |Keeps code simpler and more maintainable|
+| **State Inheritance**              |Inherits both behavior and state | Inherits behavior only (method signatures) |
+| **Constructors**           | Can inherit constructors | No constructors in interfaces  |
+| **Example Language**             | C++   | Java    |
