@@ -152,7 +152,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
     &nbsp;
 - ### Multiple Inheritance : `n -> 1` _(Through Interfaces)_
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/Multiple.png" alt="Image Alt Text" width="300" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../src/multiple.png" alt="Image Alt Text" width="300" >
 
     &nbsp;
 

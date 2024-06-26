@@ -23,7 +23,7 @@ _Abstraction in Java can be achieved through:_
 
 &nbsp;
 
-# __Abstract Classes__
+# __1. Abstract Classes__
 
 #### `Abstraction + Inheritance`
 
@@ -271,7 +271,7 @@ public interface Interface_B extends Interface_A {
 
 # __3. Interface vs Abstract class__
 
-|                | **Interface**                           | **Abstract class**                            |
+|                | **Interface**  | **Abstract class**                            |
 |-----------------------------|---------------------------------------------------------|----------------------------------------------------|
 | **Abstraction**             | Members of a Java interface are `public` by default. | A Java abstract class can have class members like private, protected, etc.               |
 | **Type of Methods**              | Interface can have `only abstract methods`. Since Java 8, it can have `default and static methods also`.                   |  Abstract class can have abstract and non-abstract methods.      |
