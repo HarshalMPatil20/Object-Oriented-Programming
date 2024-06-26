@@ -17,7 +17,7 @@ members of a class.
 
 ## Encapsulation
 
-``` mathematica
+``` javaScript
 |
 ├── Access Modifiers 
 │   ├── Private 
@@ -146,6 +146,7 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
 ## 4. Encapsulation in Classes
 
 - **Properties (Fields)** : Encapsulation involves declaring class properties (fields) to store data. These fields can have different access levels (e.g., private, protected, public) to control access.
+
   - **Instance Variables** : These are variables declared inside a class but outside any method. They are specific to each instance of the class.
 
     ```java
