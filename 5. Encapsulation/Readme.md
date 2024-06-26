@@ -17,7 +17,7 @@ members of a class.
 
 ## Encapsulation
 
-``` javaScript
+``` mathematica
 |
 ├── Access Modifiers 
 │   ├── Private 
