@@ -52,40 +52,40 @@ git clone https://github.com/HarshalMPatil20/Object-Oriented-Programming
 
 ## Roadmap
 
-### Basics of Object-Oriented Programming [&nbsp; Dive in!](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#principles-of-object-oriented-programming)
+### Basics of Object-Oriented Programming [&nbsp; Dive in!]()
 
-   1. Introduction to Object-Oriented Programming (OOP) [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#textcolor44aafctext1-introduction-to-object-oriented-programming-oop)
-      - Principles Of Object-Oriented Programming [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#principles-of-object-oriented-programming)
+   1. Introduction to Object-Oriented Programming (OOP) [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#1-introduction-to-object-oriented-programming-oop)
+      - Principles Of Object-Oriented Programming [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#principles-of-object-oriented-programming)
          - Abstraction
          - Encapsulation
          - Inheritance
          - Polymorphism
 
-   2. Class Vs Object [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#2-class-vs-object)
+   2. Class Vs Object [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#2-class-vs-object)
 
-   3. How to Write Classes [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#3-how-to-write-classes)
+   3. How to Write Classes [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#3-how-to-write-classes)
 
-      - Important : `tostring()` Method [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#important--tostring)
+      - Important : `tostring()` Method [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#important--tostring)
          - `Overridden`
          - Default
          
-   4. Data Hiding [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#4-data-hiding)
+   4. Data Hiding [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#4-data-hiding)
 
-   5. Types of Properties [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#5-types-of-properties)
+   5. Types of Properties [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#5-types-of-properties)
       - Read & Write Properties : (`get` & `set`)
       - Read-only Properties : (`get`)
       - Read-only Properties : (`get`)
 
-   6. Constructors [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#6-constructors)
+   6. Constructors [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#6-constructors)
 
-   7. Types of Constructors [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#7-types-of-constructors)
+   7. Types of Constructors [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#7-types-of-constructors)
       - Default Constructor
          - Implicit
          - Explicit
       - Parameterized Constructor
-      - `Constructor Overloading` [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#constructor-overloading--due-to-parameterization)
+      - `Constructor Overloading` [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#constructor-overloading--due-to-parameterization)
 
-   8. Array of Objects [&nbsp;>>>](1.%20Basics%20of%20Object-Oriented%20Programming/Readme.md#8-array-of-objects)
+   8. Array of Objects [&nbsp;>>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/1.%20Basics%20of%20Object-Oriented%20Programming#8-array-of-objects)
 
 ### Programming Languages and Tools
 
