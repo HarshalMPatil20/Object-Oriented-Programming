@@ -1,7 +1,7 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
 &nbsp;
 
-# Encapsulation : _The Secret Keeper of Code..._ 🤐🔐
+# 5. Encapsulation : _The Secret Keeper of Code..._ 🤐🔐
 
 ### Introduction
 
@@ -19,53 +19,53 @@ members of a class.
 
 ``` mathematica
 |
-├── Access Modifiers 
-│   ├── Private 
-│   │   ├── Fields
-│   │   ├── Methods
-│   │   └── Nested Classes
-│   ├── Protected
-│   ├── Public
-│   └── Default (Package-private)
+├── 1. Access Modifiers 
+│           ├── Private 
+│           │       ├── Fields
+│           │       ├── Methods
+│           │       └── Nested Classes
+│           ├── Protected
+│           ├── Public
+│           └── Default (Package-private)
 │
-├── Getter and Setter Methods
+├── 2. Getter and Setter Methods
 │
-├── Data Hiding
-│   ├── Encapsulation of Fields
-│   ├── Access through Methods
-│   └── Immutable Objects
+├── 3. Data Hiding
+│           ├── Encapsulation of Fields
+│           ├── Access through Methods
+│           └── Immutable Objects
 │
-├── Information Hiding
-│   ├── Abstraction
-│   ├── Interface Contracts
-│   ├── Inner Workings Concealment
-│   └── Modularization
+├── 4. Information Hiding
+│           ├── Abstraction
+│           ├── Interface Contracts
+│           ├── Inner Workings Concealment
+│           └── Modularization
 │
-└── Encapsulation in Classes
-    ├── Properties (Fields)
-    │   ├── Instance Variables
-    │   ├── Constants
-    │   └── Static Variables
-    ├── Methods
-    │   ├── Instance Methods
-    │   ├── Constructors
-    │   └── Static Methods
-    ├── Constructors
-    │   ├── Default Constructor
-    │   ├── Parameterized Constructor
-    │   ├── Constructor Overloading
-    │   ├── Copy Constructor 
-    │   ├── Constructor Chaining
-    │   ├── Private Constructor
-    │   │   ├── Singleton Pattern in Java
-    │   │   └── Utility Class in java
-    │   ├── Static Initialization Blocks 
-    │   └── Copy Assignment Operator
-    └── Nested Classes
-        ├── Nested Inner Classes
-        ├── Local Inner Classes
-        ├── Anonymous Inner Classes 
-        └── Static Inner Classes 
+└── 5. Encapsulation in Classes
+            ├── Properties (Fields)
+            │       ├── Instance Variables
+            │       ├── Constants
+            │       └── Static Variables
+            ├── Methods
+            │       ├── Instance Methods
+            │       ├── Constructors
+            │       └── Static Methods
+            ├── Constructors
+            │       ├── Default Constructor
+            │       ├── Parameterized Constructor
+            │       ├── Constructor Overloading
+            │       ├── Copy Constructor 
+            │       ├── Constructor Chaining
+            │       ├── Private Constructor
+            │       │       ├── Singleton Pattern in Java
+            │       │       └── Utility Class in java
+            │       ├── Static Initialization Blocks 
+            │       └── Copy Assignment Operator
+            └── Nested Classes
+                    ├── Nested Inner Classes
+                    ├── Local Inner Classes
+                    ├── Anonymous Inner Classes 
+                    └── Static Inner Classes 
 ```
 
 &nbsp;

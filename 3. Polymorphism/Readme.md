@@ -1,7 +1,7 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
 &nbsp;
 
-# __Polymorphism__ : _Shape-shifting Code Wizards..._ 🧙🔮
+# 3. __Polymorphism__ : _Shape-shifting Code Wizards..._ 🧙🔮
 
  _Once upon a time in the enchanted kingdom of Java, there existed a powerful concept known as Polymorphism. Imagine Polymorphism as a shape-shifting wizard, capable of taking on many forms within your code kingdom. Let's embark on a magical journey to understand this enchanting concept!_
 

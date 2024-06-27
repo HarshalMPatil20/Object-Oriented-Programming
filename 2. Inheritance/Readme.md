@@ -1,7 +1,7 @@
 <img src="../src/wall1.jpg" alt="Image Alt Text"  >
 &nbsp;
 
-# __Inheritance__ : _The Code Legacy Continues..._
+# 2. __Inheritance__ : _The Code Legacy Continues..._
 
  ___Like inheriting your parent's code, but without the family drama!___
 
