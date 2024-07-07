@@ -365,129 +365,129 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
     &nbsp;
 
 - #### _**Nested Classes**_ :
-In Java, nested classes are classes defined within another class. Java supports four types of nested classes: static nested classes, inner classes, local classes, and anonymous classes. Each type serves different purposes and has different characteristics.
+    In Java, nested classes are classes defined within another class. Java supports four types of nested classes: static nested classes, inner classes, local classes, and anonymous classes. Each type serves different purposes and has different characteristics.
 
-1. **Nested Inner Class** :
-    - Definition: Non-static classes defined within another class.
-    - Access: Can access all members of the outer class, including private members.
+    - **1. Nested Inner Class** :
+        - Definition: Non-static classes defined within another class.
+        - Access: Can access all members of the outer class, including private members.
 
-    - **Instantiation** : Requires an instance of the outer class to be created.
+        - **Instantiation** : Requires an instance of the outer class to be created.
 
-    ```java
-    OuterClass.InnerClass i = OuterClass().new InnerClass();
-    ```
+        ```java
+        OuterClass.InnerClass i = OuterClass().new InnerClass();
+        ```
 
-    - Usage: Used when instances of the inner class need to be associated with an instance of the outer class.
+        - Usage: Used when instances of the inner class need to be associated with an instance of the outer class.
 
-    Example :
+        Example :
+            &nbsp;
+
+        ```java
+        public class OuterClass {
+            private int outerValue;
+
+            public class InnerClass {
+                public void printOuterValue() {
+                    System.out.println("Outer value: " + outerValue);
+                }
+            }
+        }        
+        ```
         &nbsp;
 
-    ```java
-    public class OuterClass {
-        private int outerValue;
+    - **2. Local Inner Class** :
+        - Definition: Classes defined within a method.
+        - Access: Can access all members of the outer class, including private members.
 
-        public class InnerClass {
-            public void printOuterValue() {
-                System.out.println("Outer value: " + outerValue);
-            }
-        }
-    }        
-    ```
-    &nbsp;
+        - **Instantiation** : Can be instantiated only within the method where it is defined.
 
-2. **Local Inner Class** :
-    - Definition: Classes defined within a method.
-    - Access: Can access all members of the outer class, including private members.
-
-    - **Instantiation** : Can be instantiated only within the method where it is defined.
-
-    - Usage: Used when a class is needed only within a specific method.
-
-    Example :
-
-    ```java
-        public class OuterClass {
-
-            public void method() {
-
-                class LocalInnerClass {
-                    public void printMessage() {
-                        System.out.println("Hello from local inner class!");
-                    }
-                }
-                        LocalInnerClass localInner = new LocalInnerClass();
-                        localInner.printMessage();
-            }
-        }
-    ```
-    &nbsp;
-
-3. **Anonymous Inner Class** :
-    - Definition: Classes defined without a name.
-    - Access: Can access all members of the outer class, including private members.
-
-    - **Instantiation** : Can be instantiated only once, when it is defined.
-
-    ```java
-        new Object() {  // This part creates an anonymous class that extends the Object class
-            public void printMessage() {
-                System.out.println("Inside anonymous class");
-            }
-        }.printMessage();
-    ```
-    - Usage: Used when a class is needed only once, and its implementation is simple.
-
-    Example :
-
-    ```java
-        abstract class abstractClass {  // can use Interface also 
-            abstract void printMessage();
-        }
-
-        public class OuterClass {
-
-            void display() {
-
-                abstractClass anonymousInner = new abstractClass() {
-                    @Override
-                    public void printMessage(){
-                        System.out.println("Hello from anonymous inner class!");
-                    }
-                };
-                anonymousInner.printMessage();
-            }
-        }
-    ```
-    &nbsp;
-
-4. **Static Inner Class** :
-    - Definition: Static classes defined within another class.
-    - Access: `Can access only static members` of the outer class.
-
-    - Instantiation: Can be instantiated without an instance of the outer class.
-
-    ```java
-    OuterClass.StaticInnerClass i = new OuterClassStaticInnerClass();
-    ```
-
-    - Usage: Used when instances of the nested class do not need to be associated with an instance
+        - Usage: Used when a class is needed only within a specific method.
 
         Example :
 
-    ```java
-        public class OuterClass {
-            static class StaticInnerClass {
-                void display() {
-                    System.out.println("Inside static nested class");
+        ```java
+            public class OuterClass {
+
+                public void method() {
+
+                    class LocalInnerClass {
+                        public void printMessage() {
+                            System.out.println("Hello from local inner class!");
+                        }
+                    }
+                            LocalInnerClass localInner = new LocalInnerClass();
+                            localInner.printMessage();
                 }
             }
-        }
+        ```
+        &nbsp;
 
-        public class Main {
-            public static void main(String[] args) {
-                OuterClass.StaticInnerClass i = new OuterClass.StaticInnerClass();
-                i.display();
+    - **3. Anonymous Inner Class** :
+        - Definition: Classes defined without a name.
+        - Access: Can access all members of the outer class, including private members.
+
+        - **Instantiation** : Can be instantiated only once, when it is defined.
+
+        ```java
+            new Object() {  // This part creates an anonymous class that extends the Object class
+                public void printMessage() {
+                    System.out.println("Inside anonymous class");
+                }
+            }.printMessage();
+        ```
+        - Usage: Used when a class is needed only once, and its implementation is simple.
+
+        Example :
+
+        ```java
+            abstract class abstractClass {  // can use Interface also 
+                abstract void printMessage();
             }
-        }
-    ```
-    &nbsp;
+
+            public class OuterClass {
+
+                void display() {
+
+                    abstractClass anonymousInner = new abstractClass() {
+                        @Override
+                        public void printMessage(){
+                            System.out.println("Hello from anonymous inner class!");
+                        }
+                    };
+                    anonymousInner.printMessage();
+                }
+            }
+        ```
+        &nbsp;
+
+    - **4. Static Inner Class** :
+        - Definition: Static classes defined within another class.
+        - Access: `Can access only static members` of the outer class.
+
+        - Instantiation: Can be instantiated without an instance of the outer class.
+
+        ```java
+        OuterClass.StaticInnerClass i = new OuterClassStaticInnerClass();
+        ```
+
+        - Usage: Used when instances of the nested class do not need to be associated with an instance
+
+            Example :
+
+        ```java
+            public class OuterClass {
+                static class StaticInnerClass {
+                    void display() {
+                        System.out.println("Inside static nested class");
+                    }
+                }
+            }
+
+            public class Main {
+                public static void main(String[] args) {
+                    OuterClass.StaticInnerClass i = new OuterClass.StaticInnerClass();
+                    i.display();
+                }
+            }
+        ```
+        &nbsp;
