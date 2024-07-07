@@ -365,7 +365,7 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
     &nbsp;
 
 - #### _**Nested Classes**_ :
-    In Java, nested classes are classes defined within another class. Java supports four types of nested classes: static nested classes, inner classes, local classes, and anonymous classes. Each type serves different purposes and has different characteristics.
+    <!-- In Java, nested classes are classes defined within another class. Java supports four types of nested classes: static nested classes, inner classes, local classes, and anonymous classes. Each type serves different purposes and has different characteristics. -->
 
     - **1. Nested Inner Class** :
         - Definition: Non-static classes defined within another class.
