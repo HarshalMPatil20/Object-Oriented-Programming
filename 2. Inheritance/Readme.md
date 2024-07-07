@@ -161,7 +161,7 @@ __2. ___Cylinder___ (Subclass)__ :
 
 
 &nbsp;
-## ___3. Constructors in Inheritance___
+## ___4. Constructors in Inheritance___
 ### __A. Order of Constructors :__
 
 - Constructors are the __methods__ of class which are automatically called when an object is created.
@@ -400,7 +400,7 @@ y = 20
 
 &nbsp;
 
-## ___4. `this` v/s `super` Keyword___ 
+## ___5. `this` v/s `super` Keyword___ 
 
 The __`this`__ and __`super`__ keywords in Java are both used to refer to objects within the class hierarchy, but they serve different purposes and are used in different contexts. Here’s a detailed comparison along with examples to illustrate their usage:
 
@@ -625,7 +625,7 @@ Variable from Child
 ```
 &nbsp;
 
-## ___5. Method Overriding___ 
+## ___6. Method Overriding___ 
 
 
 - Method overriding is a feature that allows a subclass (child class) to provide a specific implementation of a method that is already defined in its superclass (parent class).
@@ -859,7 +859,7 @@ class Sub extends Super {
 
 &nbsp;
 
-## ___6. Dynamic Method Dispatch___  
+## ___7. Dynamic Method Dispatch___  
 
 - Dynamic method dispatch allows the selection of the appropriate method implementation at runtime, based on the actual type of the object.
 

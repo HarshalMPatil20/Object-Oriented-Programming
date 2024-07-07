@@ -10,10 +10,14 @@ _In the world of programming, encapsulation is the gatekeeper that ensures the s
 ### Key Concepts of Encapsulation
 
 1. **Data Hiding**: The ability to hide the implementation details of an object from the outside world, and only expose the necessary information through public methods.
+
 2. **Abstraction**: The concept of showing only the necessary information to the outside world while hiding the internal implementation details.
 3. **Encapsulation**: The bundling of data and methods that operate on that data within a single unit (class).
+
 4. **Access Modifiers**: Keywords like public, private, and protected that control access to the
 members of a class.
+
+&nbsp;
 
 ## Encapsulation
 
