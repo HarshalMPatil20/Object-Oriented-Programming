@@ -101,7 +101,7 @@ accessor methods.
 
 Data hiding is a fundamental principle in object-oriented programming (OOP) that involves concealing the internal state (data) of an object and restricting direct access to it.
 
-- Encapsulation of Fields : Declare fields as private to hide them from external access.
+- #### Encapsulation of Fields : Declare fields as private to hide them from external access.
 
     ```java
         public class Person {
@@ -109,7 +109,7 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-- Access through Methods : Provide getter and setter methods to control access to the fields.
+- #### Access through Methods : Provide getter and setter methods to control access to the fields.
 
      ```java
     public class Person {
@@ -127,7 +127,7 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
     }
     ```
 
-- Immutable Objects : Create immutable objects by making fields final and providing only getter methods.
+- #### Immutable Objects : Create immutable objects by making fields final and providing only getter methods.
 
     ```java
     public final class ImmutablePerson {

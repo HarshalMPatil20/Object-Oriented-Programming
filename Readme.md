@@ -98,74 +98,74 @@ git clone https://github.com/HarshalMPatil20/Object-Oriented-Programming
    5. Hybrid Inheritance [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#hybrid-inheritance--1---n---1)
 
 4. Constructors in Inheritance [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#4-constructors-in-inheritance)
-   - Order of Constructors [`>>`]()
-   - Calling Parameterized Constructors : `super()` [`>>`]()
+   - Order of Constructors [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#a-order-of-constructors-)
+   - Calling Parameterized Constructors : `super()` [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#b-calling-parameterized-constructors--super)
    
-5. `this` v/s `super` Keyword [&nbsp;`>>>`]()
-   - `this` Keyword [`>>`]()
-   - `super` Keyword [`>>`]()
-   - Detailed Comparison with Examples [`>>`]()
+5. `this` v/s `super` Keyword [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#5-this-vs-super-keyword)
+   - `this` Keyword [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#a-this-keyword-)
+   - `super` Keyword [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#b-super-keyword-)
+   - Detailed Comparison with Examples [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#detailed-comparison-with-examples-)
 
-6. Method Overriding  [&nbsp;`>>>`]()
+6. Method Overriding  [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#6-method-overriding)
 
-7. Dynamic Method Dispatch [&nbsp;`>>>`]()
+7. Dynamic Method Dispatch [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/2.%20Inheritance#7-dynamic-method-dispatch)
 
 ---
-### 3. Polymorphism : Shape-shifting Code Wizards... 🧙🔮 [&nbsp; `Dive in!`]()
+### 3. Polymorphism : Shape-shifting Code Wizards... 🧙🔮 [&nbsp; `Dive in!`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#3-polymorphism--shape-shifting-code-wizards-)
 
-1. What Polymorphism ? [&nbsp;`>>>`]()
+1. What Polymorphism ? [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#what-polymorphism-)
 
-2. Types of Polymorphism [&nbsp;`>>>`]()
+2. Types of Polymorphism [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#types-of-polymorphism-)
 
-3. Compile-time Polymorphism [&nbsp;`>>>`]()
-   - Method Overloading [`>>`]()
+3. Compile-time Polymorphism [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#1-compile-time-polymorphism)
+   - Method Overloading [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#a--method-overloading-)
    
 
-4. Run-time Polymorphism [&nbsp;`>>>`]()
-   - Method Overriding [`>>`]()
-   - Dynamic Method Dispatch [`>>`]()
+4. Run-time Polymorphism [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#2-run-time-polymorphism)
+   - Method Overriding [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#a--method-overriding----revise-)
+   - Dynamic Method Dispatch [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#b--dynamic-method-dispatch----revise-)
 
-5. Comparing Compile-time polymorphism and Runtime polymorphism [&nbsp;`>>>`]()
+5. Comparing Compile-time polymorphism and Runtime polymorphism [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/3.%20Polymorphism#comparing-compile-time-polymorphism-and-runtime-polymorphism-)
 
 ---
-### 4. Abstraction : Mastering the Art of Hiding Complexity ... 🛡️✨ [&nbsp; `Dive in!`]()
+### 4. Abstraction : Mastering the Art of Hiding Complexity ... 🛡️✨ [&nbsp; `Dive in!`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#4-abstraction--mastering-the-art-of-hiding-complexity--%EF%B8%8F)
 
-1. What Abstraction ? [&nbsp;`>>>`]()
+1. What Abstraction ? [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#what-abstraction-)
 
-2. Abstract Classes [&nbsp;`>>>`]()
-   - What is an Abstract Class ? [`>>`]()
-   - Abstract Method [`>>`]()
-   - How to Inherit Abstract Class ? [`>>`]()
-   - What is the use of abstract class ? [`>>`]()
+2. Abstract Classes [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#1-abstract-classes)
+   - What is an Abstract Class ? [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-what-is-an-abstract-class-)
+   - Abstract Method [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-what-is-an-abstract-method-)
+   - How to Inherit Abstract Class ? [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-how-to-inherit-abstract-class-)
+   - What is the use of abstract class ? [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-what-is-the-use-of-abstract-class-)
 
-3. Interfaces [&nbsp;`>>>`]()
-   - What is an Interface ? [`>>`]()
-   - Important about Interfaces [`>>`]()
+3. Interfaces [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#2-interfaces)
+   - What is an Interface ? [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-what-are-interfaces-)
+   - Important about Interfaces [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-important-about-interfaces-)
 
-4. Interface vs Abstract class [&nbsp;`>>>`]()
+4. Interface vs Abstract class [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#3-interface-vs-abstract-class)
 
-5. Interface & Multiple Inheritance [&nbsp;`>>>`]()
+5. Interface & Multiple Inheritance [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#4-interface--multiple-inheritance)
 
-   - Why Multiple inheritance is tricky ? [`>>`]()
+   - Why Multiple inheritance is tricky ? [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-why-multiple-inheritance-is-tricky-)
       - Diamond Problem
 
-   - How Java Avoids Multiple Inheritance directly ? [`>>`]()
-   - Comparison Table [`>>`]()
+   - How Java Avoids Multiple Inheritance directly ? [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-how-java-avoids-multiple-inheritance-directly-)
+   - Comparison Table [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/4.%20Abstraction#-comparison-table-)
 
 ---
-### 5. Encapsulation : The Secret Keeper of Code... 🤐🔐 [&nbsp; `Dive in!`]()
-   - Key Concepts of Encapsulation [`>>`]()
+### 5. Encapsulation : The Secret Keeper of Code... 🤐🔐 [&nbsp; `Dive in!`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#5-encapsulation--the-secret-keeper-of-code-)
+   - Key Concepts of Encapsulation [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#key-concepts-of-encapsulation)
 
-1. Access Modifiers [&nbsp;`>>>`]() 
+1. Access Modifiers [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#1-access-modifiers) 
 
-2. Getter and Setter Methods [&nbsp;`>>>`]()
+2. Getter and Setter Methods [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#2-getter-and-setter-methods)
 
-3. Data Hiding [&nbsp;`>>>`]()
-   - Encapsulation of Fields [`>>`]()
+3. Data Hiding [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#3-data-hiding)
+   - Encapsulation of Fields [`>>`](/5.%20Encapsulation/Readme.md# )
    - Access through Methods [`>>`]()
    - Immutable Objects  [`>>`]()
 
-4. Encapsulation in Classes [&nbsp;`>>>`]()
+4. Encapsulation in Classes [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#4-encapsulation-in-classes)
    - Properties (Fields) : [`>>`]()
    
       - Instance Variables [`>`]()
