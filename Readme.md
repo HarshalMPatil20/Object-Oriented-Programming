@@ -21,7 +21,8 @@ Welcome to the Object-Oriented Programming (OOP) Repository! This repository is 
    - [Encapsulation : The Secret Keeper of Code... 🤐🔐](#5-encapsulation--the-secret-keeper-of-code-)
    - [Additional Concepts](#6-additional-concepts-)
 4. [Contributing](#contributing)
-5. [License](#license)
+5. [Author's Note](#authors-note)
+6. [Contact](#contact)
 
 ## Introduction
 
@@ -188,13 +189,27 @@ git clone https://github.com/HarshalMPatil20/Object-Oriented-Programming
       - Copy Assignment Operator (c++) [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#copy-assignment-operator-)
 
    - Nested Classes : [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#nested-classes-)
-      - Nested Inner Class [`>`]()
-      - Local Inner Class [`>`]()
-      - Anonymous Inner Class [`>`]()
-      - Static Inner Class [`>`]()
+      - Nested Inner Class [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#1-nested-inner-class-)
+      - Local Inner Class [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#2-local-inner-class-)
+      - Anonymous Inner Class [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#3-anonymous-inner-class-)
+      - Static Inner Class [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/5.%20Encapsulation#4-static-inner-class-)
  ---
- ### 6. Additional Concepts : [&nbsp;`Dive in!`]()
-   1. Static And Final [&nbsp;`>>>`]()
+ ### 6. Additional Concepts : [&nbsp;`Dive in!`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts)
+   1. Static And Final [&nbsp;`>>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#61--static--final)
+      - Static Keyword [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#static-keyword)
+         - Static Variables [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#1-static-variables)
+         - Static Methods [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#2-static-methods-)
+         - Static Blocks [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#3-static-blocks-)
+         - Static Nested Class [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#4-static-nested-class-static-inner-class-)
+
+      - Final Keyword [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#final-keyword)
+         - Final Variables [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#1-final-variables-)
+         - Final Methods [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#2-final-methods-)
+         - Final Classes [`>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#3-final-classes-)
+      
+      - Comparison of Static and Final Keywords [`>>`](https://github.com/HarshalMPatil20/Object-Oriented-Programming/tree/main/6.%20Additional%20Concepts/6.1%20Static%20and%20Final#comparison-of-static-and-final-keywords-in-java-)
+
+
    2. Packages [&nbsp;`>>>`]()
 
 
@@ -203,7 +218,7 @@ git clone https://github.com/HarshalMPatil20/Object-Oriented-Programming
 
 ## Contributing
 
-Contributions to this repository are welcome! If you have examples, exercises, or resources related to object-oriented programming that you would like to share, please follow these guidelines:
+I welcome contributions from the community! If you have suggestions, improvements, or additional examples, please feel free to open an issue or submit a pull request. Your feedback and collaboration are highly appreciated : 
 
 1. Fork the repository and create a new branch for your contributions.
 2. Add your changes (code examples, documentation, etc.) to the appropriate directories.
@@ -213,6 +228,57 @@ Contributions to this repository are welcome! If you have examples, exercises, o
 For more information on contributing, refer to the CONTRIBUTING.md file in this repository.
 
 &nbsp;
-## License
+## Author's Note
 
-This repository is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the content in this repository, but please include attribution to the original source.
+Thank you for visiting this Object-Oriented Programming (OOP) repository. My name is Harshal Patil, and I have created this repository to share my journey and insights into OOP concepts, design patterns, and practical implementations.
+
+### Why This Repository?
+
+As a passionate software developer, I believe in the power of sharing knowledge and collaborating with the community. This repository is intended to be a comprehensive resource for anyone interested in understanding and applying OOP principles in their projects. Whether you are a beginner looking to grasp the basics or an experienced developer seeking advanced techniques, I hope you find valuable information here.
+
+### What You'll Find
+
+In this repository, you'll discover a variety of topics related to OOP, including:
+
+- Fundamental OOP concepts (classes, objects, inheritance, polymorphism, encapsulation, and abstraction)
+- Design patterns and their implementations
+- Practical examples and use cases
+- Code snippets and exercises to practice OOP principles
+- Additional concepts such as static and final keywords, packages, and more
+- A comprehensive glossary of OOP terms and definitions
+- A detailed table of contents to help you navigate the repository easily
+
+
+&nbsp;
+
+
+## Contact
+
+If you have any questions, suggestions, or just want to connect, you can reach out to me via:
+
+- Email: Harshalmpatil210@gmail.com
+- GitHub Issues: [Issues Page](https://github.com/HarshalMPatil20/Object-Oriented-Programming/issues)
+
+Thank you for your interest in this OOP repository. Happy coding!
+
+Best regards,  
+Harshal Patil
+
+&nbsp;
+
+
+<div align="center">
+  <a href="harshalmpatil210@gmail.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="30" height="30" alt="gmail logo"  />
+  </a> &nbsp; 
+  <a href="https://www.linkedin.com/in/harshal-patil-87626022a/" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="30" height="30" alt="linkedin logo"  />
+  </a> &nbsp;
+  <a href="discordapp.com/users/530693021193469973" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="30" height="30" alt="discord logo"  />
+  </a> &nbsp;
+  <a href="https://www.instagram.com/ll_harshal_patil_ll?igsh=OGhndmNwbjVuNHJq" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="30" height="30" alt="instagram logo"  />
+  </a> &nbsp;
+</div>
+
