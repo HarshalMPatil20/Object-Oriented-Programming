@@ -101,7 +101,8 @@ accessor methods.
 
 Data hiding is a fundamental principle in object-oriented programming (OOP) that involves concealing the internal state (data) of an object and restricting direct access to it.
 
-- #### Encapsulation of Fields : Declare fields as private to hide them from external access.
+- #### Encapsulation of Fields : 
+    Declare fields as private to hide them from external access.
 
     ```java
         public class Person {
@@ -109,7 +110,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-- #### Access through Methods : Provide getter and setter methods to control access to the fields.
+- #### Access through Methods : 
+    Provide getter and setter methods to control access to the fields.
 
      ```java
     public class Person {
@@ -127,7 +129,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
     }
     ```
 
-- #### Immutable Objects : Create immutable objects by making fields final and providing only getter methods.
+- #### Immutable Objects : 
+    Create immutable objects by making fields final and providing only getter methods.
 
     ```java
     public final class ImmutablePerson {
@@ -149,21 +152,24 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
 
 ## 4. Encapsulation in Classes
 
-- **Properties (Fields)** : Encapsulation involves declaring class properties (fields) to store data. These fields can have different access levels (e.g., private, protected, public) to control access.
+- #### **Properties (Fields)** : Encapsulation involves declaring class properties (fields) to store data. These fields can have different access levels (e.g., private, protected, public) to control access.
 
-  - **Instance Variables** : These are variables declared inside a class but outside any method. They are specific to each instance of the class.
+  - #### **Instance Variables** : 
+    These are variables declared inside a class but outside any method. They are specific to each instance of the class.
 
     ```java
         private int age;
     ```
 
-  - **Constants** : These are variables declared as `final` and typically `static`, meaning their values cannot be changed once initialized.
+  - #### **Constants** : 
+    These are variables declared as `final` and typically `static`, meaning their values cannot be changed once initialized.
 
     ```java
         private static final int MAX_AGE = 100;
     ```
 
-  - **Static Variables** : These are variables shared by all instances of the class. They are declared with the static keyword.
+  - #### **Static Variables** : 
+    These are variables shared by all instances of the class. They are declared with the static keyword.
 
     ```java
         private static int numberOfInstances;
@@ -171,8 +177,10 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
 
 &nbsp;
 
-- **Methods (Behavior)** : Encapsulation also involves defining methods that operate on the properties, providing a way to interact with the object without directly accessing its internal state.
-  - **Instance Methods**: Methods that operate on instance variables and can access instance-specific data.
+- #### **Methods (Behavior)** : Encapsulation also involves defining methods that operate on the properties, providing a way to interact with the object without directly accessing its internal state.
+
+  - #### **Instance Methods**: 
+    Methods that operate on instance variables and can access instance-specific data.
 
     ```java
         public int getAge() {
@@ -180,7 +188,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-  - **Constructors**: Special methods used to initialize objects. They have the same name as the class and do not have a return type.
+  - #### **Constructors**: 
+    Special methods used to initialize objects. They have the same name as the class and do not have a return type.
 
     ```java
         public Person(int initialAge) {
@@ -188,7 +197,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-  - **Static Methods**:  Can be called without creating an instance of the class. They belong to the class rather than instances of the class. They are declared with the `static` keyword.
+  - #### **Static Methods**:  
+    Can be called without creating an instance of the class. They belong to the class rather than instances of the class. They are declared with the `static` keyword.
 
     ```java
         public static int getNumberOfInstances() {
@@ -198,8 +208,9 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
 
 &nbsp;
 
-- **Constructors**
-  - **Default Constructor**: A constructor with no parameters, used to initialize objects with default values.
+- #### **Constructors**
+  - #### **Default Constructor**: 
+    A constructor with no parameters, used to initialize objects with default values.
 
     ```java
         public Person() {
@@ -207,7 +218,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-  - **Parameterized Constructor**: A constructor with parameters, used to initialize objects with specific values.
+  - #### **Parameterized Constructor**: 
+    A constructor with parameters, used to initialize objects with specific values.
 
     ```java
         public Person(int initialAge) {
@@ -215,7 +227,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-  - **Constructor Overloading** : Multiple constructors with different parameter lists, allowing for flexibility in object initialization.
+  - #### **Constructor Overloading** : 
+    Multiple constructors with different parameter lists, allowing for flexibility in object initialization.
 
     ```java
         public Person() {
@@ -226,7 +239,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-  - **Copy Constructor**: A constructor that creates a copy of an existing object.
+  - #### **Copy Constructor**: 
+    A constructor that creates a copy of an existing object.
 
     ```java
         public Rectangle(Rectangle other) {
@@ -235,7 +249,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         }
     ```
 
-  - **Constructor Chaining** : Calling one constructor from another, allowing for code reuse and simplifying object initialization.
+  - #### **Constructor Chaining** : 
+    Calling one constructor from another, allowing for code reuse and simplifying object initialization.
 
     ```java
         public Person() {
@@ -247,7 +262,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
     ```
 
     &nbsp;
-  - **Private Constructors** : Used to prevent external instantiation of a class, often in `singleton or utility classes`.
+  - #### **Private Constructors** : 
+    Used to prevent external instantiation of a class, often in `singleton or utility classes`.
     - Singleton Pattern in Java : The singleton pattern ensures that a class has only one instance and provides a global point of access to it.
 
         ```java
@@ -300,7 +316,8 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
 
         &nbsp;
 
-  - **Static Initialization Blocks** : Used to initialize static variables or perform static initialization tasks.
+  - #### **Static Initialization Blocks** : 
+    Used to initialize static variables or perform static initialization tasks.
 
     ```java
         public class StaticBlockExample {
@@ -342,52 +359,53 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
         Names: [Alice, Bob, Charlie]
     ```
 
-  - **Copy Assignment Operator** : Overloading the assignment operator to create a deep copy of an object. (c++)
+  - #### **Copy Assignment Operator** : 
+    Overloading the assignment operator to create a deep copy of an object. (c++)
 
     &nbsp;
 
-- _**Nested Classes**_ :
+- #### _**Nested Classes**_ :
 In Java, nested classes are classes defined within another class. Java supports four types of nested classes: static nested classes, inner classes, local classes, and anonymous classes. Each type serves different purposes and has different characteristics.
 
-    1. **Nested Inner Class** :
-        - Definition: Non-static classes defined within another class.
-        - Access: Can access all members of the outer class, including private members.
+1. **Nested Inner Class** :
+    - Definition: Non-static classes defined within another class.
+    - Access: Can access all members of the outer class, including private members.
 
-        - **Instantiation** : Requires an instance of the outer class to be created.
+    - **Instantiation** : Requires an instance of the outer class to be created.
 
-        ```java
-        OuterClass.InnerClass i = OuterClass().new InnerClass();
-        ```
+    ```java
+    OuterClass.InnerClass i = OuterClass().new InnerClass();
+    ```
 
-        - Usage: Used when instances of the inner class need to be associated with an instance of the outer class.
+    - Usage: Used when instances of the inner class need to be associated with an instance of the outer class.
 
-        Example :
-            &nbsp;
-
-        ```java
-        public class OuterClass {
-            private int outerValue;
-
-            public class InnerClass {
-                public void printOuterValue() {
-                    System.out.println("Outer value: " + outerValue);
-                }
-            }
-        }        
-        ```
+    Example :
         &nbsp;
 
-    2. **Local Inner Class** :
-        - Definition: Classes defined within a method.
-        - Access: Can access all members of the outer class, including private members.
+    ```java
+    public class OuterClass {
+        private int outerValue;
 
-        - **Instantiation** : Can be instantiated only within the method where it is defined.
+        public class InnerClass {
+            public void printOuterValue() {
+                System.out.println("Outer value: " + outerValue);
+            }
+        }
+    }        
+    ```
+    &nbsp;
 
-        - Usage: Used when a class is needed only within a specific method.
+2. **Local Inner Class** :
+    - Definition: Classes defined within a method.
+    - Access: Can access all members of the outer class, including private members.
 
-        Example :
+    - **Instantiation** : Can be instantiated only within the method where it is defined.
 
-        ```java
+    - Usage: Used when a class is needed only within a specific method.
+
+    Example :
+
+    ```java
         public class OuterClass {
 
             public void method() {
@@ -401,27 +419,27 @@ In Java, nested classes are classes defined within another class. Java supports 
                         localInner.printMessage();
             }
         }
-        ```
+    ```
     &nbsp;
 
-    3. **Anonymous Inner Class** :
-        - Definition: Classes defined without a name.
-        - Access: Can access all members of the outer class, including private members.
+3. **Anonymous Inner Class** :
+    - Definition: Classes defined without a name.
+    - Access: Can access all members of the outer class, including private members.
 
-        - **Instantiation** : Can be instantiated only once, when it is defined.
+    - **Instantiation** : Can be instantiated only once, when it is defined.
 
-        ```java
+    ```java
         new Object() {  // This part creates an anonymous class that extends the Object class
             public void printMessage() {
                 System.out.println("Inside anonymous class");
             }
         }.printMessage();
-        ```
-        - Usage: Used when a class is needed only once, and its implementation is simple.
+    ```
+    - Usage: Used when a class is needed only once, and its implementation is simple.
 
-        Example :
+    Example :
 
-        ```java
+    ```java
         abstract class abstractClass {  // can use Interface also 
             abstract void printMessage();
         }
@@ -439,24 +457,24 @@ In Java, nested classes are classes defined within another class. Java supports 
                 anonymousInner.printMessage();
             }
         }
-        ```
+    ```
     &nbsp;
 
-    4. **Static Inner Class** :
-        - Definition: Static classes defined within another class.
-        - Access: `Can access only static members` of the outer class.
+4. **Static Inner Class** :
+    - Definition: Static classes defined within another class.
+    - Access: `Can access only static members` of the outer class.
 
-        - Instantiation: Can be instantiated without an instance of the outer class.
+    - Instantiation: Can be instantiated without an instance of the outer class.
 
-        ```java
-        OuterClass.StaticInnerClass i = new OuterClass.StaticInnerClass();
-        ```
+    ```java
+    OuterClass.StaticInnerClass i = new OuterClassStaticInnerClass();
+    ```
 
-        - Usage: Used when instances of the nested class do not need to be associated with an instance
+    - Usage: Used when instances of the nested class do not need to be associated with an instance
 
         Example :
 
-        ```java
+    ```java
         public class OuterClass {
             static class StaticInnerClass {
                 void display() {
@@ -471,5 +489,5 @@ In Java, nested classes are classes defined within another class. Java supports 
                 i.display();
             }
         }
-        ```
-        &nbsp;
+    ```
+    &nbsp;
