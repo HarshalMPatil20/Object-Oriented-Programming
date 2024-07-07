@@ -373,26 +373,26 @@ Data hiding is a fundamental principle in object-oriented programming (OOP) that
 
         - **Instantiation** : Requires an instance of the outer class to be created.
 
-        ```java
-        OuterClass.InnerClass i = OuterClass().new InnerClass();
-        ```
+            ```java
+            OuterClass.InnerClass i = OuterClass().new InnerClass();
+            ```
 
         - Usage: Used when instances of the inner class need to be associated with an instance of the outer class.
 
-        Example :
-            &nbsp;
+            Example :
+                &nbsp;
 
-        ```java
-        public class OuterClass {
-            private int outerValue;
+            ```java
+            public class OuterClass {
+                private int outerValue;
 
-            public class InnerClass {
-                public void printOuterValue() {
-                    System.out.println("Outer value: " + outerValue);
+                public class InnerClass {
+                    public void printOuterValue() {
+                        System.out.println("Outer value: " + outerValue);
+                    }
                 }
-            }
-        }        
-        ```
+            }        
+            ```
         &nbsp;
 
     - **2. Local Inner Class** :
