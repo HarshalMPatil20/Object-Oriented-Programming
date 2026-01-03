@@ -626,4 +626,4 @@ Complex logic
 
 ---
 
-## [Q&A >>>]()
+## [Frequently Asked Questions & Answers >>>](https://github.com/HarshalMPatil20/Object-Oriented-Programming/blob/main/6.%20Additional%20Concepts/6.4%20Functional%20Programming%20(Java%208%2B)/6.4.1%20Lambda%20Expressions/Q%26A.md)
