@@ -1,25 +1,25 @@
 ## Q&A on Lambda Expressions
 
 ### 1. What is a lambda expression?
-A lambda expression is a **concise way to represent an anonymous function** that can be passed as data.  
+- A lambda expression is a **concise way to represent an anonymous function** that can be passed as data.  
 It is mainly used to implement **functional interfaces**.
 
 ---
 
 ### 2. What problem do lambda expressions solve?
-They eliminate **boilerplate code** created by anonymous inner classes and enable **functional programming style** in Java.
+- They eliminate **boilerplate code** created by anonymous inner classes and enable **functional programming style** in Java.
 
 ---
 
 ### 3. Can a lambda expression access local variables from the enclosing scope?
 
 ✔ Yes,  
-but only if those variables are **effectively final** (i.e., not modified after initialization).
+- but only if those variables are **effectively final** (i.e., not modified after initialization).
 
 ---
 ### 4. Can lambda expressions exist without functional interfaces?
 ❌ No.  
-Lambdas only work with functional interfaces.
+- Lambdas only work with functional interfaces.
 
 ---
 
@@ -46,7 +46,7 @@ x++;
 ### 6. Can lambda expressions throw exceptions?
 
 ✔ Yes,  
-but the functional interface method signature must declare it.
+- but the functional interface method signature must declare it.
 ```java
 Runnable r = () -> {
     try {
@@ -60,7 +60,7 @@ Runnable r = () -> {
 
 ### 7.What is the meaning of this inside a lambda?
 
-Inside a lambda, this refers to the enclosing class, not the lambda itself.
+- Inside a lambda, this refers to the enclosing class, not the lambda itself.
 ```java
 class Test {
     void method() {
@@ -75,7 +75,8 @@ class Test {
 
 ### 8. Can lambda expressions be generic?
 
-Yes, when used with generic functional interfaces.
+✔ Yes, 
+- when used with generic functional interfaces.
 
 ```java
 Function<Integer, String> f = x -> "Value: " + x;
@@ -95,7 +96,7 @@ Common built-in functional interfaces include:
 ### 10. Can lambda expressions be serialized?
 
 ❌ Not directly.  
-Only possible if the functional interface extends `Serializable`.
+- Only possible if the functional interface extends `Serializable`.
 
 >[!NOTE] 
 >Because lambdas are not real objects or classes like anonymous classes     
@@ -181,48 +182,51 @@ That’s why Java forces you to opt-in explicitly.
 
 ### 12. Can lambda expressions be recursive?
 ❌ No,  
-because they do not have a name to refer to themselves.
+- because they do not have a name to refer to themselves.
 
 ---
 
 
 ### 13. can lambda expressions have state?
 ❌ No,
-lambdas are stateless.
+- lambdas are stateless.
 
 ---
 
 ### 14. Can lambda expressions be nested?
 ✔ Yes,
-lambdas can be defined inside other lambdas or methods.
+- lambdas can be defined inside other lambdas or methods.
 
 ---
 
-### 15. Lambda Expression vs Anonymous Class
-| Aspect             | Lambda Expression | Anonymous Class |
-| ------------------ | ----------------- | --------------- |
-| Code size          | Very short        | Verbose         |
-| Scope              | No new scope      | New scope       |
-| `this` keyword     | Enclosing class   | Anonymous class |
-| Variable shadowing | ❌ Not allowed     | ✅ Allowed       |
-
+### 15. Can lambda expressions capture 'this' reference?
+✔ Yes,
+- lambdas can capture the 'this' reference from the enclosing class.
+```java
+class MyClass {
+    void myMethod() {
+        Runnable r = () -> System.out.println(this.getClass().getName());
+        r.run();
+    }
+}
+```
 ---
 
 ### 16. Can lambda expressions be used with method references?
 ✔ Yes,
-lambdas can be replaced with method references for cleaner code when applicable.
+- lambdas can be replaced with method references for cleaner code when applicable.
 ```java
 Function<String, Integer> toLength = String::length;
 ```
 ---
 ### 17. Are lambda expressions thread-safe?
 ✔ Yes,
-as long as they do not capture mutable shared state.
+- as long as they do not capture mutable shared state.
 
 ---
 ### 18. Can lambda expressions be used in place of traditional loops?
 ✔ Yes,
-lambdas are often used with streams to replace traditional loops for collection processing.
+- lambdas are often used with streams to replace traditional loops for collection processing.
 ```java
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 numbers.stream()
@@ -231,14 +235,14 @@ numbers.stream()
 ```
 ### 19. Can lambda expressions be assigned to variables?
 ✔ Yes,
-lambdas can be assigned to variables of functional interface types.
+- lambdas can be assigned to variables of functional interface types.
 ```java
 Predicate<Integer> isEven = n -> n % 2 == 0;
 ```
 ---
 ### 20. Can lambda expressions be passed as method arguments?
 ✔ Yes,
-lambdas can be passed as arguments to methods that accept functional interfaces.
+- lambdas can be passed as arguments to methods that accept functional interfaces.
 ```java
 void processNumbers(List<Integer> numbers, Predicate<Integer> condition) {
     for (Integer n : numbers) {
@@ -252,7 +256,7 @@ processNumbers(Arrays.asList(1, 2, 3, 4, 5), n -> n % 2 == 0);
 ---
 ### 21. Can lambda expressions return values?
 ✔ Yes,
-lambdas can return values based on the functional interface method signature.
+- lambdas can return values based on the functional interface method signature.
 ```java
 Function<Integer, Integer> square = n -> n * n;
 System.out.println(square.apply(4)); // 16
@@ -260,7 +264,7 @@ System.out.println(square.apply(4)); // 16
 ---
 ### 22. Can lambda expressions be composed?
 ✔ Yes,
-lambdas can be composed using default methods in functional interfaces.
+- lambdas can be composed using default methods in functional interfaces.
 ```java
 Function<Integer, Integer> add2 = n -> n + 2;
 Function<Integer, Integer> multiply3 = n -> n * 3;
@@ -270,7 +274,7 @@ System.out.println(addThenMultiply.apply(4)); // (4 + 2) * 3 = 18
 ---
 ### 23. Can lambda expressions throw checked exceptions?
 ✔ Yes,
-but the functional interface method signature must declare it.
+- but the functional interface method signature must declare it.
 ```java
 @FunctionalInterface
 interface CheckedFunction<T, R> {
@@ -286,7 +290,7 @@ try {
 ---
 ### 24. Can lambda expressions be used with default methods in interfaces?
 ✔ Yes,
-lambdas can be used with interfaces that have default methods.
+- lambdas can be used with interfaces that have default methods.
 ```java
 @FunctionalInterface
 interface MyInterface {
@@ -303,7 +307,7 @@ mi.defaultMethod(); // "Default method"
 ---
 ### 25. Can lambda expressions be used with static methods in interfaces?
 ✔ Yes,
-lambdas can be used with interfaces that have static methods.
+- lambdas can be used with interfaces that have static methods.
 ```java
 @FunctionalInterface
 interface MyInterface {
@@ -319,7 +323,7 @@ MyInterface.staticMethod(); // "Static method"
 
 ### 26. Can lambda expressions be used with nested functional interfaces?
 ✔ Yes,
-lambdas can be used with nested functional interfaces.
+- lambdas can be used with nested functional interfaces.
 ```java
 interface Outer {
     @FunctionalInterface
@@ -333,7 +337,7 @@ inner.execute(); // "Inner execution"
 ---
 ### 27. Can lambda expressions be used with var keyword?
 ✔ Yes,
-lambdas can be assigned to variables declared with var.
+- lambdas can be assigned to variables declared with var.
 ```java
 var greet = (String name) -> "Hello, " + name;
 System.out.println(greet.apply("World")); // "Hello, World"
@@ -341,7 +345,7 @@ System.out.println(greet.apply("World")); // "Hello, World"
 ---
 ### 28. Can lambda expressions be used with switch expressions?
 ✔ Yes,
-lambdas can be used within switch expressions for cleaner code.
+- lambdas can be used within switch expressions for cleaner code.
 ```java
 String day = "MONDAY";
 String activity = switch (day) {
@@ -354,13 +358,13 @@ System.out.println(activity); // "Go to gym"
 ---
 ### 29. Can lambda expressions be debugged?
 ✔ Yes,
-lambdas can be debugged using standard debugging tools, but stack traces may be less informative due to their anonymous nature.
+- lambdas can be debugged using standard debugging tools, but stack traces may be less informative due to their anonymous nature.
 
 ---
 
 ### 30. Can lambda expressions be used with reflection?
 ✔ Yes,
-lambdas can be inspected using reflection, but they do not have a direct class representation.
+- lambdas can be inspected using reflection, but they do not have a direct class representation.
 ```java
 Runnable r = () -> System.out.println("Hello");
 Method m = r.getClass().getDeclaredMethods()[0];
@@ -370,7 +374,7 @@ System.out.println(m.getName()); // prints the synthetic method name
 
 ### 31. Can lambda expressions be used with annotations?
 ✔ Yes,
-lambdas can be used in contexts where annotations are applicable, such as method parameters.
+- lambdas can be used in contexts where annotations are applicable, such as method parameters.
 ```java
 void execute(@NotNull Runnable task) {
     task.run();
@@ -380,7 +384,7 @@ execute(() -> System.out.println("Task executed")); // "Task executed"
 ---
 ### 32. Can lambda expressions be used with custom functional interfaces?
 ✔ Yes,
-lambdas can be used with any user-defined functional interface.
+- lambdas can be used with any user-defined functional interface.
 ```java
 @FunctionalInterface
 interface MyFunction {
@@ -392,7 +396,7 @@ System.out.println(add.compute(5, 3)); // 8
 ---
 ### 33. Can lambda expressions be used with higher-order functions?
 ✔ Yes,
-lambdas can be passed to and returned from higher-order functions.
+- lambdas can be passed to and returned from higher-order functions.
 ```java
 Function<Integer, Function<Integer, Integer>> adder = a -> b -> a + b;
 Function<Integer, Integer> add5 = adder.apply(5);
@@ -401,7 +405,7 @@ System.out.println(add5.apply(3)); // 8
 ---
 ### 34. Can lambda expressions be used with currying?
 ✔ Yes,
-lambdas can be used to implement currying in Java.
+- lambdas can be used to implement currying in Java.
 ```java
 
 Function<Integer, Function<Integer, Integer>> curriedAdd = a -> b -> a + b;
@@ -411,13 +415,13 @@ System.out.println(add10.apply(5)); // 15
 ---
 ### 35. Can lambda expressions be used with tail recursion?
 ❌ No,
-lambdas cannot be optimized for tail recursion in Java.
+- lambdas cannot be optimized for tail recursion in Java.
 
 ---
 
 ### 36. Can lambda expressions be used with memoization?
 ✔ Yes,
-lambdas can be used to implement memoization for caching results.
+- lambdas can be used to implement memoization for caching results.
 ```java
 Function<Integer, Integer> fib = new Function<>() {
     private final Map<Integer, Integer> cache = new HashMap<>();
@@ -434,7 +438,7 @@ System.out.println(fib.apply(10)); // 55
 
 ### 37. Can lambda expressions be used with asynchronous programming?
 ✔ Yes,
-lambdas can be used with asynchronous programming constructs like `CompletableFuture`.
+- lambdas can be used with asynchronous programming constructs like `CompletableFuture`.
 ```java
 CompletableFuture.supplyAsync(() -> "Hello")
     .thenApply(greeting -> greeting + ", World!")
@@ -443,7 +447,7 @@ CompletableFuture.supplyAsync(() -> "Hello")
 ---
 ### 38. Can lambda expressions be used with dependency injection?
 ✔ Yes,
-lambdas can be used with dependency injection frameworks that support functional interfaces.
+- lambdas can be used with dependency injection frameworks that support functional interfaces.
 ```java
 interface Service {
     void execute();

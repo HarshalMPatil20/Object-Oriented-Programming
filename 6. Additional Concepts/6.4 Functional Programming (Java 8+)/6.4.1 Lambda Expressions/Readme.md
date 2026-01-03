@@ -572,18 +572,13 @@ Output:
 ### 6. Object Creation & Performance (Conceptual)
 
 - Anonymous class:
-
     - Creates a new class
-
     - Creates a new object
 
 - Lambda Expression:
-
     - May be optimized
-
     - Can be stateless and reused
-
-   - Implemented via `invokedynamic`
+   - Implemented via [invokedynamic](https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5.invokedynamic)
 
 👉 Lambdas are generally lighter-weight
 
@@ -592,19 +587,14 @@ Output:
 #### Use Lambda When:
 
 - Implementing functional interfaces
-
 - Writing stream operations
-
 - Passing short behavior
-
 - Readability matters
 
 #### Use Anonymous Class When:
 
 - Multiple methods required
-
 - Need internal state
-
 - Extending abstract classes
 Complex logic
 
